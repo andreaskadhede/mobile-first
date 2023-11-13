@@ -18,148 +18,134 @@ body {
 /*************************************************************** NAVBAR **************************************************************/
 /*************************************************************************************************************************************/
 
-/* styling af navbar */
 nav {
-  background-color: black;
-  height: 89.5px;
-  width: 100%;
-  position: fixed;
-  top: 0;
-  display: block;
-  z-index: 2;
+    background-color: black;
+    height: 5rem;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: inline-block;
 }
 
-.fa {
+/* LOGO */
+#navlogo {
+    height: 2rem;
+    float: left;
+    margin: 1.5rem 1.5rem;
+}
+
+/* IKONER */
+.icon {
+    font-size: 2rem;
     float: right;
-}
-/* Styling af logo */
-#navlogo a img {
-  height: 120px;
-}
-
-nav .ul {
-  margin-right: 75px;
-  margin-top: 27px;
-  position: fixed;
-  width: 100%;
-  height: 100vh;
-  left: 100%;
-  background: inherit;
-  top: 86.5px;
-  text-align: left;
-  margin: auto;
-  transition: all 1.5s;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
+    margin: 0 0.25rem;
+    cursor: pointer;
+    display: block;
+    line-height: 5rem;
 }
 
-/* Styling af link i nav'en */
-nav div a {
-  color: white;
-  font-size: 22px;
-  float: left;
-  text-align: left;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-/* Styling af dropdown link i nav'en */
-nav div div {
-  color: white;
-  font-size: 19px;
-  float: left;
-  text-align: left;
-  text-decoration: none;
-}
-
-/* styling af label checkbtn class */
-.checkbtn {
-  color: white;
-  float: right;
-  margin-right: 40px;
-  cursor: pointer;
-  line-height: 86.5px;
-  font-size: 30px;
-  display: block;
-}
-
-/* styling af input tag  */
 #check {
-  display: none;
+    display: none;
 }
 
-#check:checked ~ .ul {
-  left: 0;
+#check:checked ~ .dropdown-menu {
+    left: 0;
 }
 
-/* styling af dropdown menu */
-.dropdown, .subdropdown{
-  float: left;
-  overflow: hidden;
-  background-color: inherit;
-  display: block;
-  text-align: left;
-  margin: 0 auto;
-  justify-content: center;
-  width: 150px;
+.fa-bars {
+    margin-right: 15px;
 }
 
-/* styling af dropdown button */
-.dropdown .dropbtn, .subdropdown .subdropbtn{
-  font-size: 22px;
-  border: none;
-  outline: none;
-  color: white;
-  padding: 14px 16px;
-  background-color: inherit;
-  font-family: inherit;
-  margin: 0;
-  cursor: pointer;
+.dropdown {
+    width: 10rem;
 }
 
-/* Tilføj farve på bagrunden af navbar links ved hover */
-nav div a:hover,
-.dropdown:hover .dropbtn,
-.subdropdown:hover .subdropbtn {
-  background-color: #4d6f59;
-  transition: 0.5s;
+.dropdown-menu {
+    margin-top: 5rem;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    left: 100%;
+    background-color: gray;
+    transition: 1s;
+    display: flex;
+    flex-direction: column;
 }
 
-/* Styling af dropdown indhold (skjult ved standard) */
-.dropdown-content, .subdropdown-content{
-  display: none;
-  position: absolute;
-  background-color: inherit;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
+.dropdown-content {
+    display: none;
+    font-size: 1rem;
+    float: left;
+    overflow: hidden;
+    width: 30rem;
 }
 
-/* Links i dropdown menu */
-.dropdown-content a, .subdropdown-content a {
-  float: none;
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  text-align: left;
+.submenu-content {
+    display: none;
+    font-size: 0.5rem;
 }
 
-/* Tilføj farve på bagrunden af dropdown links ved hover */
-.dropdown-content a:hover, .subdropdown-content a:hover {
-  background-color: #e6eee9;
-  transition: 0.5s;
+.dropdown-content, .submenu-content {
+    display: none;
+    position: absolute;
+    background-color: none;
 }
 
-/* Vis dropdown menu ved hover */
-.dropdown:hover .dropdown-content, .subdropdown:hover .dropdown-content {
-  display: block;
+
+.button, .dropdown-content a, .submenu-content a {
+    color: white;
+    display: block;
+    text-align: left;
+    width: 12rem;
+    height: 2rem;
+    font-size: 1.1rem;
+    line-height: 2rem;
+    padding-left: 5px;
+    background-color: black;
 }
 
-/* styling navbar slut */
+.dropbutton, .subbutton, .dropdown-content a {
+    float: left;
+    left: 12rem;
+}
 
+.dropdown-content a {
+    float: left;
+    left: 22rem;
+}
 
+.dropdown-content a, .submenu a, .submenu-content a {
+    font-size: 0.8rem;
+    width: 10rem;
+}
+
+.dropdown-content a, .submenu a {
+    margin-left: 12rem;
+}
+
+.submenu-content a {
+    height: 2rem;
+    line-height: 2rem;
+    margin-left: 22rem;
+    float: left;
+    left: 22rem;
+}
+
+.submenu-content .specieltpunkt, .dropdown-content .specieltpunkt {
+    line-height: 1rem;
+}
+
+.dropdown:hover .dropdown-content{
+    display: block;
+  }
+
+.submenu:hover .submenu-content {
+    display: block;
+}
+
+.button:hover, .dropdown a:hover, .submenu a:hover {
+    background-color: #2a3f52;
+}
 
 /*************************************************************************************************************************************/
 /********************************************************** FORSIDE/PROGRAM **********************************************************/
@@ -348,6 +334,71 @@ nav div a:hover,
 /*************************************************************** @MEDIA **************************************************************/
 /*************************************************************************************************************************************/
 
+/* MEDIA TIL NAVBAR */
+/* Breakpoint til tablet */
+@media (min-width: 768px) {
+    nav {
+        height: 6rem;
+    }
+
+    #navlogo {
+        height: 3rem;
+        float: left;
+        margin: 1.5rem 1.5rem;
+    }
+    
+    /* IKONER */
+    .icon {
+        font-size: 2.5rem;
+        float: right;
+        margin: 0 0.5rem;
+        cursor: pointer;
+        display: block;
+        line-height: 6rem;
+    }
+
+    .dropdown-menu {
+        margin-top: 6rem;
+    }
+}
+
+/* Breakpoint til laptop */
+@media (min-width: 1024px) {
+    nav {
+        height: 8rem;
+    }
+
+    .icon {
+        display: none;
+    }
+
+    /* Adjust the styles for the navigation links */
+    .dropdown-menu {
+        flex-direction: row;
+        justify-content: space-around;
+        height: 0;
+    }
+
+    .dropdown-content a, .submenu a {
+        margin-left: 0rem;
+        float: none;
+    }
+    
+    .buttonekstra {
+        margin-top: 2rem;
+    }
+ 
+}
+
+
+
+
+
+
+
+
+
+/* MEDIA TIL FOOTER */
 @media (min-width: 385px) {
   .brf1 {
     display: none;

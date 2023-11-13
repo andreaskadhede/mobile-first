@@ -28,145 +28,134 @@
   </head>
   <body>
     <header>
-      <!-- navbar start -->
-
-    <nav>
-        <!--Punkt til burgermenu-->
-        <i class="fa fa-magnifying-glass"></i>
-        <input type="checkbox" id="check" />
-        <label for="check" class="checkbtn">
-          <i class="fa fa-bars"></i>
-        </label>
-
-        <!--Indsat vores logo i navbar-->
-        <label id="navlogo" class="navlogo">
-          <a href="index.html">
-            <img src="img/logo/logo_done.webp" alt="Logo" />
-          </a>
-        </label>
-
-        <div class="ul">
-            <!--Dropdown effekt til submenuer-->
-            <!--PROGRAM-->
-            <div class="dropdown">
-                <div class="dropbtn"><a href="index.html" class="dropbtn">Program</a></div>
-                <!--Her laver vi endnu en dropdown effekt på en submenu, så der er sub-sub-menuer-->
-                <div class="subdropdown-content">
-                    <div class="subdropdown">
-                        <div class="subdropbtn">
-                            <a href="error.html">Aktuelle film</a>
-                        </div>
-                        <div class="subdropdown-content">
-                            <a href="film.html">Bastarden</a>
-                        </div>
-                    </div>
-                    <a href="error.html">Kommende film</a>
-                </div>
-            </div>
+        <!-- navbar start -->
+        <nav>
+            <!-- IKONER -->
+            <input type="checkbox" id="check" />
+            <label for="check" class="checkbtn icon">
+                <i class="fa fa-bars"></i>
+            </label>
+            <i class="fa fa-magnifying-glass icon"></i>
             
-            <!--EVENTS-->
-            <div class="dropdown">
-            <div class="dropbtn"><a href="error.html">Events</a></div>
-                <div class="subdropdown-content">
-                    <a href="error.html">Babybio</a>
-                    <a href="studentbio.html">Studentbio</a>
-                    <a href="error.html">Seniorbio</a>
-                    <a href="error.html">Franske film mandage</a>
-                    <a href="error.html">Cinematek tirsdag</a>
-                    <a href="error.html">Englenes aftener</a>
-                </div>
-            </div>
 
-            <!--KLUBBER-->
-            <!--Her er der ingen submenu tilhørende menupunktet-->
-            <a class="dropdown" href="klubber.html">Klubber</a>
-            
-            <!--OM ØST FOR PARADIS-->
-            <div class="dropdown">
-                <div class="dropbtn">
-                    <a href="error.html">Om Øst for Paradis</a>
-                </div>
-                <div class="dropdown-content">
-                    <!--Sub-sub-menu-->
-                    <div class="subdropdown">
-                        <div class="subdropbtn">
-                            <a href="">Biografens historie</a>
-                        </div>
-                        <div class="subdropdown-content">
-                            <a href="error.html">Ombygning</a>
-                        </div>
-                    </div>
-                    
-                    <!--Sub-sub-menu-->
-                    <div class="subdropdown">
-                        <div class="subdropbtn">
-                            <a href="error.html">Generel information</a>
-                        </div>
-                        <div class="subdropdown-content">
-                            <a href="error.html">Parkering</a>
-                            <a href="error.html">Faciliteter</a>
-                            <a href="error.html">Muligheder for handicappede</a>
-                            <a href="error.html">Adresse</a>
-                            <a href="error.html">Billetpriser og rabatter</a>
-                            <a href="error.html">Betalingsmuligheder</a>
-                            <a href="error.html">Snacks og drikkevarer</a>
-                        </div>
-                    </div>
-                    <a href="error.html">Job i Øst for Paradis</a>
-                    <a href="error.html">Kontakt</a>
-                    <a href="error.html">Distribution</a>
-                    <a href="error.html">Paradisets engle</a>
-                </div>
-            </div>
+            <!-- LOGO -->
+            <a href="index.html">
+                <img id="navlogo" src="img/logo/logo_done.webp" alt="Logo" />
+            </a>
 
-            <!--MIN SIDE-->
-            <div class="dropdown">
-                <button class="dropbtn">Min side</button>
-                <div class="dropdown-content">
-                    <!--Sub-sub-menu-->
-                    <div class="subdropdown">
-                        <button class="subdropbtn">Login</button>
-                        <div class="subdropdown-content">
-                            <a href="error.html">Mine fordele</a>
+            <!-- DROPDOWN MENU -->
+            <div class="dropdown-menu">
+
+                <!-- PROGRAM -->
+                <div class="dropdown">
+                <a class="dropbutton button" href="index.html">Program</a>
+                    <div class="dropdown-content">
+                        <div class="submenu">
+                            <a class="subbutton button buttonekstra" href="error.html">Aktuelle film</a>
+                            <div class="submenu-content">
+                                <a href="film.html">Bastarden</a>
+                            </div>
                         </div>
+                        <a href="error.html">Kommende film</a>
                     </div>
                 </div>
-            </div>
 
-            <!--MERE-->
-            <div class="dropdown">
-                <button class="dropbtn">Mere</button>
-                <div class="dropdown-content">
-                    <!--Sub-sub-menu-->
-                    <div class="subdropdown">
-                        <button class="subdropbtn">Lej en sal</button>
-                        <div class="subdropdown-content">
-                            <a href="error.html">Fødseldag i Paradis</a>
-                            <a href="error.html">Skoleforestilling</a>
-                            <a href="error.html">En romantisk aften</a>
+                <!-- EVENTS -->
+                <div class="dropdown">
+                    <a class="dropbutton button" href="error.html">Events</a>
+                    <div class="dropdown-content">
+                        <a class="buttonekstra" href="error.html">BabyBio</a>
+                        <a href="studentbio.html">StudenBio</a>
+                        <a href="error.html">SeniorBio</a>
+                        <a href="error.html">Franske film mandage</a>
+                        <a href="error.html">Cinematek tirsdag</a>
+                        <a href="error.html">Englenes aftener</a>
+                    </div>
+                </div>
+
+                <!-- KLUBBER -->
+                <a class="button" href="klubber.html">Klubber</a>
+
+                <!-- OM ØST FOR PARADIS -->
+                <div class="dropdown">
+                    <a class="dropbutton button" href="error.html">Om Øst for Paradis</a>
+                    <div class="dropdown-content">
+                        <div class="submenu">
+                            <a class="subbutton button buttonekstra" href="error.html">Biografens historie</a>
+                            <div class="submenu-content">
+                                <a href="error.html">Ombygning</a>
+                            </div>
                         </div>
-                
-                        <!--Sub-sub-menu-->
-                        <button class="subdropbtn">Shop</button>
-                        <div class="subdropdown-content">
-                            <a href="error.html">Gavekort</a>
-                            <a href="error.html">Merchandise</a>
-                            <a href="error.html">DVD'er</a>
-                            <a href="error.html">Plakater</a>
+                        <div class="submenu">
+                            <a class="subbutton button" href="error.html">Generel information</a>
+                            <div class="submenu-content">
+                                <a href="error.html">Parkering</a>
+                                <a href="error.html">Faciliteter</a>
+                                <a class="specieltpunkt" href="error.html">Muligheder for handicappede</a>
+                                <a href="error.html">Addresse</a>
+                                <a href="error.html">Billetpriser og rabatter</a>
+                                <a href="error.html">Betalingsmuligheder</a>
+                                <a href="error.html">Snacks og drikkevarer</a>                    
+                            </div>
+                        </div>
+                        <a href="error.html">Job i Øst for Paradis</a>
+                        <a href="error.html">Kontakt</a>
+                        <a href="error.html">Distribution</a>
+                        <a href="error.html">Paradisets engle</a>
+                    </div>
+                </div>
+
+                <!-- MIN SIDE -->
+                <div class="dropdown">
+                    <a class="dropbutton button" href="error.html">Min side</a>
+                    <div class="dropdown-content">
+                        <div class="submenu">
+                            <a class="subbutton button buttonekstra" href="error.html">Login</a>
+                            <div class="submenu-content">
+                                <a class="buttonekstra" href="error.html">Mine fordele</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- MERE -->
+                <div class="dropdown">
+                    <a class="dropbutton button" href="error.html">Mere</a>
+                    <div class="dropdown-content">
+                        <div class="submenu">
+                            <a class="subbutton button buttonekstra" href="error.html">Lej en sal</a>
+                            <div class="submenu-content">
+                                <a href="error.html">Fødseldag i Paradis</a>
+                                <a href="error.html">Skoleforestilling</a>
+                                <a href="error.html">En romantisk aften</a>
+                            </div>
                         </div>
                     
-                        <!--Sub-sub-menu-->
-                        <button class="subdropbtn">Samarbejdspartnere</button>
-                        <div class="subdropdown-content">
-                            <a href="error.html">Cinemateket</a>
+                        <div class="submenu">
+                            <a class="subbutton button" href="error.html">Shop</a>
+                            <div class="submenu-menu">
+                                <a href="error.html">Gavekort</a>
+                                <a href="error.html">Merchandise</a>
+                                <a href="error.html">DVD'er</a>
+                                <a href="error.html">Plakater</a>
+                            </div>
                         </div>
-                        <a href="error.html">Reklame på det store lærred</a>
+                        <div class="submenu">
+                            <a class="subbutton button" href="error.html">Samarbejdspartnere</a>
+                            <div class="submenu-content">
+                                <a href="error.html">Cinemateket</a>
+                            </div>
+                        </div>
+                        <a class="specieltpunkt" href="error.html">Reklame på det store lærred</a>
                         <a href="error.html">Nyhedsbrev</a>
                     </div>
                 </div>
             </div>
-        </div> 
-    </nav>
+        </nav>
+
+
+
+    
       <!-- navbar slut -->
     </header>
 
