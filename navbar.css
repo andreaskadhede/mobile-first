@@ -1,0 +1,385 @@
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+/* styling af body */
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  background-color: #2a3f52;
+  color: white;
+  width: 100%;
+}
+
+/*************************************************************************************************************************************/
+/*************************************************************** NAVBAR **************************************************************/
+/*************************************************************************************************************************************/
+
+/* styling af navbar */
+nav {
+  background-color: black;
+  height: 89.5px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  display: block;
+  z-index: 2;
+}
+
+.fa {
+    float: right;
+}
+/* Styling af logo */
+#navlogo a img {
+  height: 120px;
+}
+
+nav .ul {
+  margin-right: 75px;
+  margin-top: 27px;
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  left: 100%;
+  background: inherit;
+  top: 86.5px;
+  text-align: left;
+  margin: auto;
+  transition: all 1.5s;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+/* Styling af link i nav'en */
+nav div a {
+  color: white;
+  font-size: 22px;
+  float: left;
+  text-align: left;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Styling af dropdown link i nav'en */
+nav div div {
+  color: white;
+  font-size: 19px;
+  float: left;
+  text-align: left;
+  text-decoration: none;
+}
+
+/* styling af label checkbtn class */
+.checkbtn {
+  color: white;
+  float: right;
+  margin-right: 40px;
+  cursor: pointer;
+  line-height: 86.5px;
+  font-size: 30px;
+  display: block;
+}
+
+/* styling af input tag  */
+#check {
+  display: none;
+}
+
+#check:checked ~ .ul {
+  left: 0;
+}
+
+/* styling af dropdown menu */
+.dropdown, .subdropdown{
+  float: left;
+  overflow: hidden;
+  background-color: inherit;
+  display: block;
+  text-align: left;
+  margin: 0 auto;
+  justify-content: center;
+  width: 150px;
+}
+
+/* styling af dropdown button */
+.dropdown .dropbtn, .subdropdown .subdropbtn{
+  font-size: 22px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+  cursor: pointer;
+}
+
+/* Tilføj farve på bagrunden af navbar links ved hover */
+nav div a:hover,
+.dropdown:hover .dropbtn,
+.subdropdown:hover .subdropbtn {
+  background-color: #4d6f59;
+  transition: 0.5s;
+}
+
+/* Styling af dropdown indhold (skjult ved standard) */
+.dropdown-content, .subdropdown-content{
+  display: none;
+  position: absolute;
+  background-color: inherit;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+/* Links i dropdown menu */
+.dropdown-content a, .subdropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Tilføj farve på bagrunden af dropdown links ved hover */
+.dropdown-content a:hover, .subdropdown-content a:hover {
+  background-color: #e6eee9;
+  transition: 0.5s;
+}
+
+/* Vis dropdown menu ved hover */
+.dropdown:hover .dropdown-content, .subdropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* styling navbar slut */
+
+
+
+/*************************************************************************************************************************************/
+/********************************************************** FORSIDE/PROGRAM **********************************************************/
+/*************************************************************************************************************************************/
+
+/*************************************************************************************************************************************/
+/************************************************************* FILM *************************************************************/
+/*************************************************************************************************************************************/
+
+/*************************************************************************************************************************************/
+/************************************************************ STUDENTBIO *************************************************************/
+/*************************************************************************************************************************************/
+
+.student-h1 {
+  text-align: center;
+}
+
+/*************************************************************************************************************************************/
+/************************************************************* KLUBBER ***************************************************************/
+/*************************************************************************************************************************************/
+
+/* Styling af klubber */
+.klubber {
+  text-align: left;
+  margin: 5% 18%;
+}
+
+/* Styling af overskrift */
+.klubber-h1 {
+  text-align: center;
+  align-items: center;
+  font-size: 3rem;
+  padding: 1rem;
+}
+
+/* Styling af flexbox 1 */
+
+.klubber-box1 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+/* Styling af billede */
+.klubber-box1 img {
+  width: 100%;
+  align-items: center;
+  margin: 50px 0;
+}
+
+/* Styling af flexbox 2 */
+.klubber-box2 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+/* Styling af billede */
+.klubber-box2 img {
+  width: 100%;
+  align-items: left;
+  margin: 50px 0;
+}
+
+/* Styling af flexbox 3 */
+.klubber-box3 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+/* Styling af billede */
+.klubber-box3 img {
+  width: 100%;
+  align-items: center;
+  margin: 50px 0;
+}
+
+/*************************************************************************************************************************************/
+/*************************************************************** FOOTER **************************************************************/
+/*************************************************************************************************************************************/
+
+.footer {
+  padding: 10px 10px 0;
+  background-color: black;
+  width: 100%;
+  bottom: 0;
+  font-size: 0.57rem;
+  color: white;
+  position: relative;
+}
+
+.topf {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: inherit;
+}
+
+.aabningstiderf {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 0;
+  padding: 0;
+  list-style: none;
+  margin-bottom: 0;
+  color: inherit;
+  width: 33%;
+}
+
+.aabningstiderf li {
+  margin: 3px 0;
+}
+
+.logof {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: inherit;
+  font-size: inherit;
+  width: 33%;
+  align-items: center;
+}
+
+.logof a img {
+  color: inherit;
+  height: 3rem;
+  padding-bottom: 3px;
+}
+
+.socialf a {
+  color: white;
+  font-size: 1.5rem;
+}
+
+.linksf {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  color: inherit;
+  text-decoration: none;
+  list-style: none;
+  width: 33%;
+}
+
+.linksf,
+.titelf {
+  font-size: 0.9rem;
+}
+
+.linksf li {
+  margin: 3px 0;
+}
+
+.linksf li a {
+  color: white;
+  margin: 3px 0;
+}
+
+.bundf {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  font-size: 0.7rem;
+  list-style: none;
+  padding: 7px 0;
+  color: inherit;
+}
+
+.bundf li {
+  width: 33%;
+}
+
+#bundfli2 {
+  text-align: center;
+}
+
+#bundfli3 {
+  text-align: right;
+}
+
+/*************************************************************************************************************************************/
+/*************************************************************** @MEDIA **************************************************************/
+/*************************************************************************************************************************************/
+
+@media (min-width: 385px) {
+  .brf1 {
+    display: none;
+  }
+}
+
+@media (min-width: 500px) {
+  .brf2 {
+    display: none;
+  }
+}
+
+/* Breakpoint til tablet */
+@media (min-width: 768px) {
+  .footer {
+    font-size: 1rem;
+  }
+
+  .logof a img {
+    height: 5rem;
+  }
+
+  .socialf a {
+    font-size: 2rem;
+  }
+
+  .linksf,
+  .titelf {
+    font-size: 1.2rem;
+  }
+
+  .bundf {
+    font-size: 1rem;
+  }
+}

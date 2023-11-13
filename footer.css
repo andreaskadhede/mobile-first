@@ -186,6 +186,7 @@ body {
 
 .linksf, .titelf {
     font-size: 0.9rem;
+
 }
 
 .linksf li {
@@ -239,7 +240,7 @@ body {
 /* Breakpoint til tablet */
 @media (min-width: 768px){
     .footer {
-        font-size: 1rem;
+        font-size: 0.8rem;
     }
 
     .logof a img {
@@ -251,7 +252,7 @@ body {
     }
 
     .linksf, .titelf {
-        font-size: 1.2rem;
+        font-size: 1.5rem;
     }
 
     .bundf {
