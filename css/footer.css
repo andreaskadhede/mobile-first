@@ -1,0 +1,181 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+/* styling af body */
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    background-color: #ededed;
+}
+
+
+/*************************************************************************************************************************************/
+/*************************************************************** FOOTER **************************************************************/
+/*************************************************************************************************************************************/
+
+
+.footer {
+    padding: 1rem;
+    background-color: black;
+    width: 100%;
+    bottom: 0;
+    font-size: 0.5rem;
+    color: white;
+}
+
+.topf {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: inherit;
+}
+
+.aabningstiderf {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 0.5;
+    line-height: 1.6;
+    margin-bottom: 0;
+    color: inherit;
+    width: 30%;
+}
+
+
+.logof {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 15px;
+    color: inherit;
+    font-size: inherit;
+    width: 30%;
+}
+
+.linksf {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    color: inherit;
+    text-decoration: none;
+    list-style: none;
+    opacity: 0.8;
+    width: 30%;
+}
+
+.linksf, .titelf {
+    font-size: 1rem;
+}
+
+.bundf {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    font-size: 0.5rem;
+    list-style: none;
+    padding: 10px 0;
+    color: inherit;
+}
+
+
+.copyright {
+    margin-top: 1rem;
+    padding-bottom: 0.5rem;
+    text-align: center;
+    font-size: 0.4rem;
+    color: inherit;
+}
+
+
+/*
+.footer {
+    padding: 1rem;
+    background-color: black;
+    width: 100%;
+    bottom: 0;
+    font-size: 0.5rem;
+}
+
+.topf {
+    display: flex;
+    justify-content: space-between;
+}
+
+.venstref {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 0;
+    padding: 0;
+    list-style: none;
+    font-size: inherit;
+    line-height: 1.6;
+    margin-bottom: 0;
+    color: white;
+}
+
+.titelf {
+
+}
+
+.midtf {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 15px;
+    color: white;
+    font-size: inherit;
+    list-style: none;
+}
+
+.højref {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    font-size: inherit;
+    color: white;
+    text-decoration: none;
+    list-style: none;
+    opacity: 0.8;
+}
+
+.bundf {
+    bottom: 0;
+}
+
+.copyright {
+    color: white;
+}
+
+*/
+
+
+
+
+
+
+
+/* styling af symboler ved hover */
+.footer .social a:hover {
+    opacity: 0.9;
+    color: #4d6f59;
+}
+
+
+
+
+/* styling af menu links ved hover */
+.footer ul li a:hover {
+    opacity: 1;
+    color: #4d6f59;
+}
+
+
