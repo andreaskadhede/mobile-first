@@ -1,0 +1,121 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+/* styling af body */
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    background-color: #2a3f52;
+    color: white;
+    width: 100%;
+    font-size: smaller;
+}
+
+
+/*Styling af overskrift*/
+.student-h1{
+    text-align: center;
+    padding: 3rem;
+    margin-top: 1rem; 
+    
+}
+
+/*Styling af de sorte bokse med dag og dato*/
+.boxes1{
+    display: flex;
+    padding: 1.5rem;
+    
+}
+.dato-tidspunkt-student{
+    background-color: black;
+    height: 3rem;
+    width: 4rem;
+    margin: 0.5rem;
+    font-size: smaller;
+    
+}
+
+.beskrivelse{
+    margin: 0.5rem;
+    width: 100%;
+    padding: 1.5rem;
+}
+
+img{
+    height: 14rem;
+    width: auto;
+}
+
+.posters-rækker{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    padding: 1.5rem;
+}
+
+img{
+    margin: 0.50rem;
+}
+
+.dato-tid{
+    display: flex;
+    justify-content: center;
+}
+
+.tid a{
+    background-color: #982216;
+    padding: 1rem;
+    color: white;
+
+
+}
+
+.tid a:hover {
+    background-color: black;
+    transition: 0.7s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 385px){
+    .brf1{
+        display: none;
+    }
+}
+
+@media (min-width: 500px){
+    .brf2{
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
