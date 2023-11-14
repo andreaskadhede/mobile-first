@@ -147,6 +147,10 @@ nav {
     background-color: #2a3f52;
 }
 
+.search {
+    display: none;
+}
+
 /*************************************************************************************************************************************/
 /********************************************************** FORSIDE/PROGRAM **********************************************************/
 /*************************************************************************************************************************************/
@@ -375,19 +379,69 @@ nav {
     /* Adjust the styles for the navigation links */
     .dropdown-menu {
         flex-direction: row;
-        justify-content: space-around;
+        justify-content: center;
         height: 0;
+        margin-top: 0;
+        margin-left: -1rem;
+        left: 0;
+        flex-direction: row;
+        position: relative;
+        gap: 4rem;
     }
 
     .dropdown-content a, .submenu a {
         margin-left: 0rem;
         float: none;
+        width: 7rem;
     }
     
     .buttonekstra {
         margin-top: 2rem;
     }
+
+
+    .submenu-content {
+        float: left;
+        margin-left: 7rem;
+        margin-top: -2rem;
+        width: 7rem;
+    }
+
+
+    .dropdown-menu a {
  
+        background-color: red;
+    }
+
+    .navspeciel {
+        padding-right: 8rem;
+        background-color: red;
+        margin-right: -2rem;
+    }
+    .search {
+        position: absolute;
+        display: block;
+        right: 2rem;
+        padding: 0.5rem 2.5rem;
+        border: none;
+        top: 2.5rem;
+        font-size: 1rem;
+        background-color: #2a3f52;
+        border-radius: 10px;
+        z-index: 1;
+        
+    }
+
+    .fa-magnifying-glass {
+        display: block;
+        font-size: 1.5rem;
+        position: relative;
+        right: 2rem;
+        z-index: 2;
+        top: 0.5rem;
+
+    }
+
 }
 
 
