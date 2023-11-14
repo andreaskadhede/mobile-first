@@ -44,18 +44,20 @@ nav {
     line-height: 5rem;
 }
 
-#check {
-    display: none;
-}
-
-#check:checked ~ .dropdown-menu {
-    left: 0;
-}
-
 .fa-bars {
     margin-right: 15px;
 }
 
+#check {
+    display: none;
+}
+
+/* BURGERMENU KOMMER FREM VED KLIK */
+#check:checked ~ .dropdown-menu {
+    left: 0;
+}
+
+/* DROPDOWNMENU START */
 .dropdown {
     width: 10rem;
 }
@@ -129,6 +131,8 @@ nav {
     margin-left: 22rem;
     float: left;
     left: 22rem;
+    display: flex;
+    align-items: center;
 }
 
 .submenu-content .specieltpunkt, .dropdown-content .specieltpunkt {
@@ -143,8 +147,10 @@ nav {
     display: block;
 }
 
-.button:hover, .dropdown a:hover, .submenu a:hover {
-    background-color: #2a3f52;
+/* DROPDOWNMENU SLUT */
+
+.search {
+    display: none;
 }
 
 /*************************************************************************************************************************************/
@@ -334,7 +340,7 @@ nav {
 /*************************************************************** @MEDIA **************************************************************/
 /*************************************************************************************************************************************/
 
-/* MEDIA TIL NAVBAR */
+/********************************************************** MEDIA TIL NAVBAR *********************************************************/
 /* Breakpoint til tablet */
 @media (min-width: 768px) {
     nav {
@@ -368,37 +374,95 @@ nav {
         height: 8rem;
     }
 
+    /* IKONER OG LOGO */
     .icon {
         display: none;
     }
 
-    /* Adjust the styles for the navigation links */
+    
     .dropdown-menu {
         flex-direction: row;
-        justify-content: space-around;
+        justify-content: center;
         height: 0;
+        left: 0;
+        flex-direction: row;
+        position: relative;
     }
 
-    .dropdown-content a, .submenu a {
-        margin-left: 0rem;
-        float: none;
+    .dropdown-menu a {
+        background-color: black;
+        font-size: 0.85rem;
+        width: 7rem;
+        margin-left: 3rem;
+        text-wrap: nowrap;
     }
-    
-    .buttonekstra {
+
+
+    .dropdown-content a, .submenu a {
+        margin-left: 3rem;
+        float: none;
+        width: 10rem;
+    }
+
+    .dropdown-content .buttonekstra {
         margin-top: 2rem;
     }
- 
+
+    a #dropdown-contentspeciel .submenu a {
+        margin-left: -2rem;
+        background-color: rebeccapurple;
+    }
+
+    .submenu-content{
+        float: left;
+        margin-left: 10rem;
+        margin-top: -2rem;
+        width: 10rem;
+    }
+
+    #navspeciel {
+        display: block;
+        margin-right: -0.5rem;
+    }
+
+    /* SØGEFELT KOMMER FREM + SYLING */
+    .search {
+        position: absolute;
+        display: block;
+        right: 2rem;
+        padding: 0.5rem 0;
+        width: 15rem;
+        border: none;
+        top: 2.5rem;
+        font-size: 1rem;
+        background-color: #2a3f52;
+        border-radius: 10px;
+        z-index: 1; 
+        color: white;
+    }
+
+    .fa-magnifying-glass {
+        display: block;
+        font-size: 1.5rem;
+        position: relative;
+        right: 2rem;
+        z-index: 2;
+        top: 0.5rem;
+    }
+
+    .dropdown .specieltpunkt {
+
+        text-wrap: wrap;
+    }
+
+    .dropdown .dropbutton, .dropdown-menu .dropbutton {
+        font-size: 1rem;
+    }
+
 }
 
 
-
-
-
-
-
-
-
-/* MEDIA TIL FOOTER */
+/********************************************************** MEDIA TIL FOOTER *********************************************************/
 @media (min-width: 385px) {
   .brf1 {
     display: none;
