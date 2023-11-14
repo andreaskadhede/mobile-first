@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Øst for Paradis • Program</title>
+    <title>Øst for Paradis • Bastarden</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/film.css">
+    <link rel="stylesheet" href="nav-film-klubber-error-footer.css">
     <link rel="icon" href="">
 
     <!-- Ekstra Meta
@@ -21,90 +21,262 @@
     -->
 
 </head>
-<body class="film-body">
+<body>
     <header>
-                <!-- navbar start -->
+        <!-- NAVBAR START -->
+        <nav>
+            <!-- ikoner -->
+            <input type="checkbox" id="check" />
+            <label for="check" class="checkbtn icon">
+                <i class="fa fa-bars"></i>
+            </label>
+            <i class="fa fa-magnifying-glass icon"></i>
+            
 
-                 <!-- navbar slut -->
+            <!-- logo -->
+            <a href="index.html">
+                <img id="navlogo" src="img/logo/logo_done.webp" alt="Logo" />
+            </a>
 
+            <!-- søge felt -->
+            <input class="search" type="text" placeholder=" ">
+
+            <!-- dropdown menu -->
+            <div class="dropdown-menu">
+
+                <!-- program -->
+                <div class="dropdown">
+                <a class="dropbutton button" href="index.html">Program</a>
+                    <div class="dropdown-content">
+                        <div class="submenu">
+                            <a class="subbutton button buttonekstra" href="error.html">Aktuelle film</a>
+                            <div class="submenu-content">
+                                <a href="film.html">Bastarden</a>
+                            </div>
+                        </div>
+                        <a href="error.html">Kommende film</a>
+                    </div>
+                </div>
+
+                <!-- events -->
+                <div class="dropdown">
+                    <a class="dropbutton button" href="error.html">Events</a>
+                    <div class="dropdown-content">
+                        <a class="buttonekstra" href="error.html">BabyBio</a>
+                        <a href="studentbio.html">StudenBio</a>
+                        <a href="error.html">SeniorBio</a>
+                        <a href="error.html">Franske film mandage</a>
+                        <a href="error.html">Cinematek tirsdag</a>
+                        <a href="error.html">Englenes aftener</a>
+                    </div>
+                </div>
+
+                <!-- klubber -->
+                <a class="dropbutton button" id="navspeciel" href="klubber.html">Klubber</a>
+
+                <!-- om øst for paradis -->
+                <div class="dropdown">
+                    <a class="dropbutton button" id="menuspeciel" href="error.html">Om Øst for Paradis</a>
+                    <div class="dropdown-content" id="dropdown-contentspeciel">
+                        <div class="submenu">
+                            <a class="subbutton button buttonekstra" href="error.html">Biografens historie</a>
+                            <div class="submenu-content">
+                                <a href="error.html">Ombygning</a>
+                            </div>
+                        </div>
+                        <div class="submenu">
+                            <a class="subbutton button" href="error.html">Generel information</a>
+                            <div class="submenu-content">
+                                <a href="error.html">Parkering</a>
+                                <a href="error.html">Faciliteter</a>
+                                <a class="specieltpunkt" href="error.html">Muligheder for handicappede</a>
+                                <a href="error.html">Addresse</a>
+                                <a class="specieltpunkt" href="error.html">Billetpriser og rabatter</a>
+                                <a href="error.html">Betalingsmuligheder</a>
+                                <a href="error.html">Snacks og drikkevarer</a>                    
+                            </div>
+                        </div>
+                        <a class="menuspeciel" href="error.html">Job i Øst for Paradis</a>
+                        <a href="error.html">Kontakt</a>
+                        <a href="error.html">Distribution</a>
+                        <a href="error.html">Paradisets engle</a>
+                    </div>
+                </div>
+
+                <!-- min side -->
+                <div class="dropdown">
+                    <a class="dropbutton button" id="menuspeciel2" href="error.html">Min side</a>
+                    <div class="dropdown-content">
+                        <div class="submenu">
+                            <a class="subbutton button buttonekstra" href="error.html">Login</a>
+                            <div class="submenu-content">
+                                <a href="error.html">Mine fordele</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- mere -->
+                <div class="dropdown">
+                    <a class="dropbutton button" href="error.html">Mere</a>
+                    <div class="dropdown-content">
+                        <div class="submenu">
+                            <a class="subbutton button buttonekstra" href="error.html">Lej en sal</a>
+                            <div class="submenu-content">
+                                <a href="error.html">Fødseldag i Paradis</a>
+                                <a href="error.html">Skoleforestilling</a>
+                                <a href="error.html">En romantisk aften</a>
+                            </div>
+                        </div>
+                    
+                        <div class="submenu">
+                            <a class="subbutton button" href="error.html">Shop</a>
+                            <div class="submenu-menu">
+                                <a href="error.html">Gavekort</a>
+                                <a href="error.html">Merchandise</a>
+                                <a href="error.html">DVD'er</a>
+                                <a href="error.html">Plakater</a>
+                            </div>
+                        </div>
+                        <div class="submenu">
+                            <a class="subbutton button" href="error.html">Samarbejdspartnere</a>
+                            <div class="submenu-content">
+                                <a href="error.html">Cinemateket</a>
+                            </div>
+                        </div>
+                        <a class="specieltpunkt" href="error.html">Reklame på det store lærred</a>
+                        <a href="error.html">Nyhedsbrev</a>
+                    </div>
+                </div>
+            </div>
+
+        </nav>
+        <!-- NAVBAR SLUT -->
     </header>
 
     <main class="film">
-    
         <section class="film-box1">
-            <img src="/img/movieposter/bastarden-movieposter.jpg" alt="Bastarden">
+            <div class="img">
+                <img src="/img/movieposter/bastarden-movieposter.jpg" alt="Bastarden">
+            </div>
+                <div class="film-intro">
                 <h1>Bastarden</h1>
                 <p>Book billet:</p>
-    
+
                 <div class="film-box1_1">
-                <a href="#">12:30</a>
-                <a href="#">14:15</a>
-                </div>
-    
-                <div class="film-box1_2">
-                <a href="#">16:30</a>
-                <a href="#">20:00</a>
+                    <a href="#">12:30</a>
+                    <a href="#">14:15</a>
                 </div>
 
+                <div class="film-box1_1">
+                    <a href="#">16:30</a>
+                    <a href="#">20:00</a>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Tekniske filmopblysninger -->
+        <div class="film-box2">
+            <input type="checkbox" id="film-laesmere2">
+            <p><b>Spilletid:</b> 2t 8 min.</p>
+            <p><b>Censur:</b> Tilladt for børn over 15 år</p>
+            <p><b>Talt sprog:</b> Dansk</p>
+            <div class="film-box-laesmere2">
+                <p><b>Genre:</b> Drama</p>
+                <p><b>Land/År:</b> 2023</p>
+                <p><b>Filmpremiere:</b> Torsdag 05. Oktober</p>
+                <p><b>Tekstet sprog:</b> Dansk</p>
+                <p><b>Originaltitel:</b> Bastarden</p>
+                <p><b>Skuespillere:</b> Mads Mikkelse, Amanda Collin, Simon Bennebjerg, Melina Hagber, Gustav Lindg, Kristine Kujath Thorp, Morten Hee Andersen, Thomas W. Gabrielsson, Jacob Lohmann</p>
+                <p><b>Instruktion:</b> Nikolaj Arcel</p>
+                <p><b>Produktion:</b> Louise Vesth</p>
+                <p><b>Manuskript:</b> Anders Thomas Jensen, Nikolaj Arcel</p>
+
+                <label for="film-laesmere2" class="film-laesmindre2-knap knap">
+                    Vis mindre
+                </label>
+            </div>
+            <label for="film-laesmere2" class="film-laesmere2-knap knap">
+                Læs mere...
+            </label>
+        </div>
+        
+        <!-- Filmbeskrivelse -->
+        <section class="film-box3">
+            <input type="checkbox" id="film-laesmere3">
+            <h2>Filmbeskrivelse</h2>
+            <p>Filmen 'Bastarden' bygger på Ida Jessens bog 'Kaptajnen og Ann Barbara'. Den fortæller historien om den jyske uopdyrkede hede og kampen om denne i 1750’ernes Danmark. Filmen trækker os igennem lidenskab, mål, landskab og passion.</p>
+            <div class="film-box-laesmere3">
+                <p>Den fattige kaptajn Ludvig Kahlen forsøger sig i 1755, at opdyrke den jyske hede, som ingen har haft held med indtil videre. Det går ikke let for sig, og han møder kraftig modstand. Frederik de Schinkel prøver at kæmpe imod ham på den ene og den anden måde.</p>
+                <label for="film-laesmere3" class="film-laesmindre3-knap knap">
+                    Vis mindre
+                </label>
+            </div>
+            <label for="film-laesmere3" class="film-laesmere3-knap knap">
+                Læs mere...
+            </label>
+        </section>
+        
+        <!-- Trailer -->
+        <section class="film-box4">
+            <h2>Trailer</h2>
+            <div class="trailer">
+                <iframe src="https://www.youtube.com/embed/-MLuALgrg_k?si=EDznUFG5mcWU38Cz" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+        </section>
+        
+        <!-- Anmeldelser -->
+        <section class="film-box5">
+            <input type="checkbox" id="film-laesmere5">
+            <h2>Anmeldelser</h2>
+            <img src="/img/stjerner.svg" alt="Stjerner">
+            <div class="film-box-laesmere5">
+                <h3>Cinemateket</h3>
+                <p> "Bastarden" er en dansk westernfilm, skabt af instruktøren Nikolaj Arcel og med den prisbelønnede skuespiller Mads Mikkelsen i front. Cinemateket er fulde af begejstring for filmen. De fremhæver filmens unikke stil, den engagerende historie og de imponerende skuespilpræstationer. </p>
+                <a class="anmeldelse-link" href="">Læs mere...</a>
+                <h3>Politiken</h3>
+                <p>Den nye film <q>Bastarden</q> overgår alles forventninger. Mads Mikkelsen kan opleves endnu engang i frontfigur i den danske filmhistorie. Kunsten i skuespillernes præstation spejles godt i filmen.</p> 
+                <a class="anmeldelse-link" href="">Læs mere...</a>
+                <label for="film-laesmere5" class="film-laesmindre5-knap knap">
+                    Vis mindre
+                </label>
+            </div>
+            <label for="film-laesmere5" class="film-laesmere5-knap knap">
+                Læs anmeldelser...
+            </label>
         </section>
 
-<!-- Tekniske filmopblysninger -->
-<div class="film-box2">
-    <p>
-    <b>Spilletid:</b> 2t 8 min. <br>
-    <b>Censur:</b> Tilladt for børn over 15 år <br>
-    <b>Talt sprog:</b> Dansk
-</p>
-<br> 
-<button>Læs mere...</button>
-</div>
-
-<!-- Filmbeskrivelse -->
-<section class="film-box3">
-<h2>Filmbeskrivelse</h2>
-<p>Filmen 'Bastarden' bygger på Ida Jessens bog 'Kaptajnen og Ann Barbara'. Den fortæller historien om den jyske uopdyrkede hede og kampen om denne i 1750’ernes Danmark. Filmen trækker os igennem lidenskab, mål, landskab og passion. </p>
-
-<input type="checkbox" id="læsmereknapf">
-<label id="filmknap" for="læsmereknapf">Læs mere...</label>
-
-<div id="læsmeretekstf">
-  <p>Den fattige kaptajn Ludvig Kahlen forsøger sig i 1755, at opdyrke den jyske hede, som ingen har haft held med indtil videre. Det går ikke let for sig, og han møder kraftig modstand. Frederik de Schinkel prøver at kæmpe imod ham på den ene og den anden måde. </p>
-
-</div>
-
-
-
-</section>
-
-<!-- Trailer -->
-<section class="film-box4">
-<h2>Trailer</h2> <br>
-<iframe src="https://www.youtube.com/embed/-MLuALgrg_k?si=EDznUFG5mcWU38Cz" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-</section>
-
-<!-- Anmeldelser -->
-<section class="film-box5">
-<h2>Anmeldelser</h2>
-<img src="/img/stjerner.svg" alt="Stjerner">
-<br>
-<input type="checkbox" id="læsmereknapa">
-<label id="anmeldelsesknap" for="læsmereknapa">Læs anmeldelser...</label>
-
-<div id="læsmereteksta">
-    <h3>Cinemateket</h3>
-    <p> "Bastarden" er en dansk westernfilm, skabt af instruktøren Nikolaj Arcel og med den prisbelønnede skuespiller Mads Mikkelsen i front. Cinemateket er fulde af begejstring for filmen. De fremhæver filmens unikke stil, den engagerende historie og de imponerende skuespilpræstationer. </p> 
-       <button>Læs mere..</button>  
-     
-    <h3>Politiken</h3>
-    <p>Den nye film ‘’Bastarden’’ overgår alles forventninger. Mads Mikkelsen kan opleves endnu engang i frontfigur i den danske filmhistorie. Kunsten i skuespillernes præstation spejles godt i filmen.</p> 
-        <button>Læs mere..</button>
-</div>
-</section>
-
-</main>
+    </main>
 
  <!-- footer start -->
  <footer class="footer">
+    <div class="topf">
+        <ul class="aabningstiderf">
+            <li class="titelf">Åbningstider</li>
+            <li>Mandag - Fredag <br class="brf1"> 12:00-22:00</li>
+            <li>Lørdag - Søndag <br class="brf1"> 11:30-22:00</li>
+        </ul>
+        
+        <div class="logof">
+            <a href="error.html"><img src="img/logo/logo_done.webp" alt="Øst for Paradis logo"></a>
+            <div class="socialf">
+                <a href="https://www.facebook.com/oestforparadisbio/"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.instagram.com/oestforparadis/"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+
+        <ul class="linksf">
+            <li><a href="error.html">Persondata</a></li>
+            <li><a href="error.html">Cookies</a></li>
+            <li><a href="error.html">Vilkår</a></li>
+        </ul>
+    </div>
+
+    <ul class="bundf">
+        <li>+45 86 19 81 22</li>
+        <li id="bundfli2">Paradisgade 9c, <br class="brf2"> 8000 Aarhus C</li>
+        <li id="bundfli3">kontor@paradisbio.dk</li>
+    </ul>
 </footer>
 <!-- footer slut -->
 </body>
