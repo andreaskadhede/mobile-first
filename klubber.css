@@ -1,3 +1,4 @@
+
 * {
     padding: 0;
     margin: 0;
@@ -8,32 +9,156 @@
 /* styling af body */
 body {
     font-family: 'Roboto', sans-serif;
-    font-weight: 400;
+    font-weight: 300;
     background-color: #2a3f52;
     color: white;
     width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 300;
 }
 
 
 /*************************************************************************************************************************************/
 /*************************************************************** NAVBAR **************************************************************/
 /*************************************************************************************************************************************/
+nav {
+    background-color: black;
+    height: 5rem;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: inline-block;
+}
+
+/* LOGO */
+#navlogo {
+    height: 2rem;
+    float: left;
+    margin: 1.5rem 1.5rem;
+}
+
+/* IKONER */
+.icon {
+    font-size: 2rem;
+    float: right;
+    margin: 0 0.25rem;
+    cursor: pointer;
+    display: block;
+    line-height: 5rem;
+}
+
+#check {
+    display: none;
+}
+
+#check:checked ~ .dropdown-menu {
+    left: 0;
+}
+
+.fa-bars {
+    margin-right: 15px;
+}
+
+.dropdown {
+    width: 10rem;
+}
+
+.dropdown-menu {
+    margin-top: 5rem;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    left: 100%;
+    background-color: gray;
+    transition: 1s;
+    display: flex;
+    flex-direction: column;
+}
+
+.dropdown-content {
+    display: none;
+    font-size: 1rem;
+    float: left;
+    overflow: hidden;
+    width: 30rem;
+}
+
+.submenu-content {
+    display: none;
+    font-size: 0.5rem;
+}
+
+.dropdown-content, .submenu-content {
+    display: none;
+    position: absolute;
+    background-color: none;
+}
 
 
+.button, .dropdown-content a, .submenu-content a {
+    color: white;
+    display: block;
+    text-align: left;
+    width: 12rem;
+    height: 2rem;
+    font-size: 1.1rem;
+    line-height: 2rem;
+    padding-left: 5px;
+    background-color: black;
+}
 
+.dropbutton, .subbutton, .dropdown-content a {
+    float: left;
+    left: 12rem;
+}
 
+.dropdown-content a {
+    float: left;
+    left: 22rem;
+}
 
+.dropdown-content a, .submenu a, .submenu-content a {
+    font-size: 0.8rem;
+    width: 10rem;
+}
 
+.dropdown-content a, .submenu a {
+    margin-left: 12rem;
+}
 
+.submenu-content a {
+    height: 2rem;
+    line-height: 2rem;
+    margin-left: 22rem;
+    float: left;
+    left: 22rem;
+}
 
+.submenu-content .specieltpunkt, .dropdown-content .specieltpunkt {
+    line-height: 1rem;
+}
 
+.dropdown:hover .dropdown-content{
+    display: block;
+  }
 
+.submenu:hover .submenu-content {
+    display: block;
+}
+
+.button:hover, .dropdown a:hover, .submenu a:hover {
+    background-color: #2a3f52;
+}
+
+.search {
+    display: none;
+}
 
 /*************************************************************************************************************************************/
 /********************************************************** FORSIDE/PROGRAM **********************************************************/
 /*************************************************************************************************************************************/
-
-
 
 /*************************************************************************************************************************************/
 /************************************************************* FILM *************************************************************/
@@ -54,64 +179,68 @@ body {
 /************************************************************* KLUBBER ***************************************************************/
 /*************************************************************************************************************************************/
 
-/* Styling af klubber */
 .klubber {
     text-align: left;
-    margin:5%  18%;
+    margin: 6rem  10% 1.5rem;
+    width: 80%;
 }
 
 /* Styling af overskrift */
 .klubber-h1 {
     text-align: center;
-    align-items: center;
     font-size: 3rem;
-    padding: 1rem;
+    margin: 1rem;
+    text-transform: uppercase;
 }
 
-/* Styling af flexbox 1 */
+.klubber p {
+    margin: 10px 0 5px;
+    font-size: 0.9rem;
+}
 
-.klubber-box1 {
+/* Styling af indhold*/
+.klubber article {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     width: 100%;
-
 }
 
-/* Styling af billede */
-.klubber-box1 img {
+/* Styling af underoverskrifter */
+.klubber article h2 {
+    font-size: 1.5rem;
+    margin: 5px 0;
+}
+
+/* Styling af tekst */
+.klubber article p {
+    margin: 5px 0;
+    font-size: 0.9rem;
+}
+
+/* Styling af billeder */
+.klubber article img {
     width: 100%;
     align-items: center; 
-    margin: 50px 0;
- }
-
-/* Styling af flexbox 2 */
-.klubber-box2 {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    margin: 25px 0 10px;
 }
 
-/* Styling af billede */
-.klubber-box2 img {
-    width: 100%;
-    align-items: left; 
-    margin: 50px 0;
- }
-
-/* Styling af flexbox 3 */
-.klubber-box3 {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+/* læs mere knap + læs mindre knapper */
+.laesmere-tekst1, .laesmere-tekst2, .laesmere-tekst3  {
+    display: none;
 }
 
-/* Styling af billede */
-.klubber-box3 img {
-    width: 100%;
-    align-items: center; 
-    margin: 50px 0;
- }
+#klubber-laesmere1, #klubber-laesmere2, #klubber-laesmere3  {
+    display: none;
+}
+
+#klubber-laesmere1:checked ~ .laesmere-tekst1, #klubber-laesmere2:checked ~ .laesmere-tekst2, #klubber-laesmere3:checked ~ .laesmere-tekst3 {
+    display: block;
+}
+
+#klubber-laesmere1:checked ~ .laesmere1, #klubber-laesmere2:checked ~ .laesmere2, #klubber-laesmere3:checked ~ .laesmere3 {
+    display: none;
+}
 
 
 /*************************************************************************************************************************************/
@@ -186,7 +315,6 @@ body {
 
 .linksf, .titelf {
     font-size: 0.9rem;
-
 }
 
 .linksf li {
@@ -225,37 +353,94 @@ body {
 /*************************************************************** @MEDIA **************************************************************/
 /*************************************************************************************************************************************/
 
-@media (min-width: 385px){
-    .brf1{
-        display: none;
-    }
-}
-
-@media (min-width: 500px){
-    .brf2{
-        display: none;
-    }
-}
+/********************************************************** MEDIA TIL KLUBBER ********************************************************/
 
 /* Breakpoint til tablet */
-@media (min-width: 768px){
-    .footer {
-        font-size: 0.8rem;
+@media (min-width: 768px) {
+
+    .klubber {
+        margin: 6rem 12% 1.5rem;
+        width: 76%;
     }
 
-    .logof a img {
-        height: 5rem;
-    }
-    
-    .socialf a {
-        font-size: 2rem;
+    .klubber p {
+        margin: 10px 0 5px;
+        font-size: 1.4rem;
     }
 
-    .linksf, .titelf {
-        font-size: 1.5rem;
+    /* Styling af indhold*/
+    .klubber article {
+        margin: 3rem 0;
     }
 
-    .bundf {
+    .klubber-tekst {
+        display: flex;
+        width: 60%;
+        padding: 0 10px 5px;
+        flex-direction: column;
+    }
+
+    /* Styling af underoverskrifter */
+    .klubber article h2 {
+        font-size: 2.3rem;
+        margin: 0;
+    }
+
+    /* Styling af tekst */
+    .klubber article p {
+        margin: 10px 0;
+        font-size: 1.4rem;
+    }
+
+    /* Styling af billeder */
+    .klubber article .img {
+        width: 40%;
+        align-items: center; 
+        margin: 5px 0;
+    }
+
+    .klubber article .img img {
+        margin: 0;
+    }
+
+    .klubber-ekstra {
+        display: none;
+    }
+
+}
+
+/* Breakpoint til laptop */
+@media (min-width: 1024px) {
+
+    .klubber p {
         font-size: 1rem;
+    }
+
+    .klubber-tekst {
+        width: 65%;
+    }
+
+    /* Styling af billeder */
+    .klubber article .img {
+        width: 35%;
+    }
+
+    /* Styling af underoverskrifter */
+    .klubber article h2 {
+        font-size: 1.9rem;
+    }
+
+    /* Styling af tekst */
+    .klubber article p {
+        font-size: 1rem;
+    }
+
+    /* læs mere knap + læs mindre knapper */
+    .laesmere-tekst1, .laesmere-tekst2, .laesmere-tekst3  {
+        display: block;
+    }
+
+    .laesmindre1, .laesmere1, .laesmindre2, .laesmere2, .laesmindre3, .laesmere3 {
+        display: none;
     }
 }

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Øst for Paradis • Program</title>
+    <title>Øst for Paradis • Klubber</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,95 +23,245 @@
 </head>
 <body>
     <header>
-        <!-- navbar start -->
+        <!-- NAVBAR START -->
         <nav>
-        
-        </nav>
-        <!-- navbar slut -->
+            <!-- ikoner -->
+            <input type="checkbox" id="check" />
+            <label for="check" class="checkbtn icon">
+                <i class="fa fa-bars"></i>
+            </label>
+            <i class="fa fa-magnifying-glass icon"></i>
+            
 
+            <!-- logo -->
+            <a href="index.html">
+                <img id="navlogo" src="img/logo/logo_done.webp" alt="Logo" />
+            </a>
+
+            <!-- søge felt -->
+            <input class="search" type="text" placeholder=" ">
+
+            <!-- dropdown menu -->
+            <div class="dropdown-menu">
+
+                <!-- program -->
+                <div class="dropdown">
+                <a class="dropbutton button" href="index.html">Program</a>
+                    <div class="dropdown-content">
+                        <div class="submenu">
+                            <a class="subbutton button buttonekstra" href="error.html">Aktuelle film</a>
+                            <div class="submenu-content">
+                                <a href="film.html">Bastarden</a>
+                            </div>
+                        </div>
+                        <a href="error.html">Kommende film</a>
+                    </div>
+                </div>
+
+                <!-- events -->
+                <div class="dropdown">
+                    <a class="dropbutton button" href="error.html">Events</a>
+                    <div class="dropdown-content">
+                        <a class="buttonekstra" href="error.html">BabyBio</a>
+                        <a href="studentbio.html">StudenBio</a>
+                        <a href="error.html">SeniorBio</a>
+                        <a href="error.html">Franske film mandage</a>
+                        <a href="error.html">Cinematek tirsdag</a>
+                        <a href="error.html">Englenes aftener</a>
+                    </div>
+                </div>
+
+                <!-- klubber -->
+                <a class="dropbutton button" id="navspeciel" href="klubber.html">Klubber</a>
+
+                <!-- om øst for paradis -->
+                <div class="dropdown">
+                    <a class="dropbutton button" id="menuspeciel" href="error.html">Om Øst for Paradis</a>
+                    <div class="dropdown-content" id="dropdown-contentspeciel">
+                        <div class="submenu">
+                            <a class="subbutton button buttonekstra" href="error.html">Biografens historie</a>
+                            <div class="submenu-content">
+                                <a href="error.html">Ombygning</a>
+                            </div>
+                        </div>
+                        <div class="submenu">
+                            <a class="subbutton button" href="error.html">Generel information</a>
+                            <div class="submenu-content">
+                                <a href="error.html">Parkering</a>
+                                <a href="error.html">Faciliteter</a>
+                                <a class="specieltpunkt" href="error.html">Muligheder for handicappede</a>
+                                <a href="error.html">Addresse</a>
+                                <a class="specieltpunkt" href="error.html">Billetpriser og rabatter</a>
+                                <a href="error.html">Betalingsmuligheder</a>
+                                <a href="error.html">Snacks og drikkevarer</a>                    
+                            </div>
+                        </div>
+                        <a class="menuspeciel" href="error.html">Job i Øst for Paradis</a>
+                        <a href="error.html">Kontakt</a>
+                        <a href="error.html">Distribution</a>
+                        <a href="error.html">Paradisets engle</a>
+                    </div>
+                </div>
+
+                <!-- min side -->
+                <div class="dropdown">
+                    <a class="dropbutton button" id="menuspeciel2" href="error.html">Min side</a>
+                    <div class="dropdown-content">
+                        <div class="submenu">
+                            <a class="subbutton button buttonekstra" href="error.html">Login</a>
+                            <div class="submenu-content">
+                                <a href="error.html">Mine fordele</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- mere -->
+                <div class="dropdown">
+                    <a class="dropbutton button" href="error.html">Mere</a>
+                    <div class="dropdown-content">
+                        <div class="submenu">
+                            <a class="subbutton button buttonekstra" href="error.html">Lej en sal</a>
+                            <div class="submenu-content">
+                                <a href="error.html">Fødseldag i Paradis</a>
+                                <a href="error.html">Skoleforestilling</a>
+                                <a href="error.html">En romantisk aften</a>
+                            </div>
+                        </div>
+                    
+                        <div class="submenu">
+                            <a class="subbutton button" href="error.html">Shop</a>
+                            <div class="submenu-menu">
+                                <a href="error.html">Gavekort</a>
+                                <a href="error.html">Merchandise</a>
+                                <a href="error.html">DVD'er</a>
+                                <a href="error.html">Plakater</a>
+                            </div>
+                        </div>
+                        <div class="submenu">
+                            <a class="subbutton button" href="error.html">Samarbejdspartnere</a>
+                            <div class="submenu-content">
+                                <a href="error.html">Cinemateket</a>
+                            </div>
+                        </div>
+                        <a class="specieltpunkt" href="error.html">Reklame på det store lærred</a>
+                        <a href="error.html">Nyhedsbrev</a>
+                    </div>
+                </div>
+            </div>
+
+        </nav>
+        <!-- NAVBAR SLUT -->
     </header>
 
     <main class="klubber">
         <!-- Overskrift + beskrivelse af klubber -->
-        <h1 class="klubber-h1">KLUBBER</h1> 
-        <br>
-            <p>Vi har her i biografen en masse klubber, du kan blive medlem af. Vi synes at kunst er en god investering, og vi giver dig derfor muligheden for at opleve dette.</p>
-            <br>
-            <p> Nogle af klubberne tilbyder dig rabatter og gode priser, hver gang du vil ind og se en film her i Øst for Paradis. </p>
-            <br>
-            <p>Vi holder særlige events for medlemmer af diverse klubber, som du ikke vil gå glip af.</p>
+        <h1 class="klubber-h1">Klubber</h1>
+        <p>Vi har her i biografen en masse klubber, du kan blive medlem af. Vi synes at kunst er en god investering, og vi giver dig derfor muligheden for at opleve dette.</p>
+        <p> Nogle af klubberne tilbyder dig rabatter og gode priser, hver gang du vil ind og se en film her i Øst for Paradis. </p>
+        <p>Vi holder særlige events for medlemmer af diverse klubber, som du ikke vil gå glip af.</p>
 
             <!-- 1. sektion: Biografklub Danmark -->
-        <section class="klubber-box1">  
-            <img src="/img/logo/biografklubdk-logo.webp" alt="Biografklub Danmark">
-            <h2>Biografklub Danmark</h2>
-            <br>
-            <p>Biografklub Danmark er din billet til filmoplevelser med gode rabatter på udvalgte film i biografen. Hver sæson håndplukkes 10 unikke film, som medlemmer kan nyde til halv pris. 
-                <br><br>
-                Sæson 23/24 er netop blevet annonceret, og premiereaftenen den 24/8 byder på den danske spillefilm ‘’Når befrielsen kommer’’ instrueret af den Oscar-vindende instruktør Anders Walther.</p>
-        </section>
+        <article class="klubber-box">  
+            <div class="img">
+                <img src="/img/logo/biografklubdk-logo.webp" alt="Biografklub Danmark">
+            </div>
+            <section class="klubber-tekst">
+                <input type="checkbox" id="klubber-laesmere1">
+                <h2>Biografklub Danmark</h2>
+                <p>Biografklub Danmark er din billet til filmoplevelser med gode rabatter på udvalgte film i biografen. Hver sæson håndplukkes 10 unikke film, som medlemmer kan nyde til halv pris.</p>
+                <div class="laesmere-tekst1">
+                    <p>Sæson 23/24 er netop blevet annonceret, og premiereaftenen den 24/8 byder på den danske spillefilm <q>Når befrielsen kommer</q> instrueret af den Oscar-vindende instruktør Anders Walther.</p>
+                    <label for="klubber-laesmere1" class="laesmindre1 knap">
+                        Vis mindre
+                    </label>
+                </div>
+                <label for="klubber-laesmere1" class="laesmere1 knap">
+                    Læs mere...
+                </label>
+            </section>
+        </article>
 
             <!-- 2. sektion: Filmporten -->
-        <section class="klubber-box2">
-            <img src="/img/logo/filmporten-logo.webp" alt="Filmporten">
-            <h2>Filmporten</h2>
-            <br>
-            <p>Bliv medlem af Filmporten og få 50% rabat til 12 tankevækkende film på 1 år! 
-                Tankevækkende og anmelderroste kvalitetsfilm til 1 / 2 pris. 
-                Film du (forhåbentlig) aldrig glemmer! 
-                Filmporten viser hvert år de 12 mest tankevækkende og kunstneriske film i ægte articnema stil. 
-                <br><br>
-                Vi tilbyder et program, hvor man kan se 3 - 4 måneder frem. Programmet struktureres efter en Cannes-, Venedig- og Berlin-vinder. Og vi kan give plads til et mesterværk, der bliver vist for filmklubben. 
-                 <br><br>
-                I 2001 tog Filmporten sin begyndelse som et initiativ fra de danske arthouse-biografer, der ønskede at skabe et mere solidt fundament for smalle kvalitetsfilm. Dette initiativ udsprang som et modsvar til den overordnede tendens, hvor alt stræbte efter at blive større og dyrere. 
-                Bag Filmporten står folk, der deler den overbevisning, at filmkvalitet ikke nødvendigvis korrelerer med størrelsen af marketingbudgettet. En kvalitetsfilm i deres optik er ofte en film, der ikke blot underholder, men også formår at underholde med substans og betydning. 
-                 <br><br>
-                Medlemskab til Filmporten købes i direkte i vores billetsalg eller på FILMPORTEN.DK 
-                 <br><br>
-                Prisen for medlemskab er kun kr. 100</p>
-        </section>
+        <article class="klubber-box">
+            <div class="img">
+                <img src="/img/logo/filmporten-logo.webp" alt="Filmporten">
+            </div>
+            <section class="klubber-tekst">
+                <input type="checkbox" id="klubber-laesmere2">
+                <h2>Filmporten</h2>
+                <p>Bliv medlem af Filmporten og få 50% rabat til 12 tankevækkende film på 1 år!</p>
+                <p>Tankevækkende og anmelderroste kvalitetsfilm til 1 / 2 pris.</p>
+                <div class="laesmere-tekst2">
+                    <p>Film du (forhåbentlig) aldrig glemmer! <br> Filmporten viser hvert år de 12 mest tankevækkende og kunstneriske film i ægte articnema stil.</p>
+                    <p>Vi tilbyder et program, hvor man kan se 3 - 4 måneder frem. Programmet struktureres efter en Cannes-, Venedig- og Berlin-vinder. Og vi kan give plads til et mesterværk, der bliver vist for filmklubben.</p>
+                    <p>I 2001 tog Filmporten sin begyndelse som et initiativ fra de danske arthouse-biografer, der ønskede at skabe et mere solidt fundament for smalle kvalitetsfilm. Dette initiativ udsprang som et modsvar til den overordnede tendens, hvor alt stræbte efter at blive større og dyrere.</p>
+                    <p>Bag Filmporten står folk, der deler den overbevisning, at filmkvalitet ikke nødvendigvis korrelerer med størrelsen af marketingbudgettet. En kvalitetsfilm i deres optik er ofte en film, der ikke blot underholder, men også formår at underholde med substans og betydning.</p>
+                    <p>Medlemskab til Filmporten købes i direkte i vores billetsalg eller på FILMPORTEN.DK</p>
+                    <p>Prisen for medlemskab er kun kr. 100</p>
+                    <label for="klubber-laesmere2" class="laesmindre2 knap">
+                        Vis mindre
+                    </label>
+                </div>
+                <label for="klubber-laesmere2" class="laesmere2 knap">
+                    Læs mere...
+                </label>
+            </section>
+        </article>
 
             <!-- 3. sektion: Filmklubben -->
-        <section class="klubber-box3">
-            <img src="/img/logo/filmklubben-logo.webp" alt="Filmklubben">
-            <h2>Filmklubben</h2>
-            <br>
-            <p>Sammen med Cinemateket har vi sammensat en række filmvisninger til børn, unge og nostalgikere. Ved hver film har vi enten et oplæg, noget lækkert at spise eller en spændende workshop før eller efter filmen. Vi oplever en stor interesse og glæde ved vores filmdage, og vi håber du vil være med i Filmklubben. 
-                <br><br>
-                Personer under 15 år får 50% rabat på billetten. </p>
-        </section>
+        <article class="klubber-box">
+            <div class="img">
+                <img src="/img/logo/filmklubben-logo.webp" alt="Filmklubben">
+            </div>
+            <section class="klubber-tekst">
+                <input type="checkbox" id="klubber-laesmere3">
+                <h2>Filmklubben</h2>
+                <p>Sammen med Cinemateket har vi sammensat en række filmvisninger til børn, unge og nostalgikere. Ved hver film har vi enten et oplæg, noget lækkert at spise eller en spændende workshop før eller efter filmen.</p>
+                <div class="laesmere-tekst3">
+                    <p>Vi oplever en stor interesse og glæde ved vores filmdage, og vi håber du vil være med i Filmklubben.</p>
+                    <p>Personer under 15 år får 50% rabat på billetten.</p>
+                    <label for="klubber-laesmere3" class="laesmindre3 knap">
+                        Vis mindre
+                    </label>
+                </div>
+                <label for="klubber-laesmere3" class="laesmere3 knap">
+                    Læs mere...
+                </label>
+            </section>
+        </article>
     </main>
 
- <!-- footer start -->
- <footer class="footer">
-    <div class="topf">
-        <ul class="aabningstiderf">
-            <li class="titelf">Åbningstider</li>
-            <li>Mandag - fredag <br class="brf1"> 12:00-22:00</li>
-            <li>Lørdag - Søndag <br class="brf1"> 11:30-22:00</li>
-        </ul>
-        
-        <div class="logof">
-            <a href="error.html"><img src="img/logo/logo_done.webp" alt="Øst for Paradis logo"></a>
-            <div class="socialf">
-                <a href="https://www.facebook.com/oestforparadisbio/"><i class="fab fa-facebook"></i></a>
-                <a href="https://www.instagram.com/oestforparadis/"><i class="fab fa-instagram"></i></a>
+    <!-- FOOTER START -->
+    <footer class="footer">
+        <div class="topf">
+            <ul class="aabningstiderf">
+                <li class="titelf">Åbningstider</li>
+                <li>Mandag - Fredag <br class="brf1"> 12:00-22:00</li>
+                <li>Lørdag - Søndag <br class="brf1"> 11:30-22:00</li>
+            </ul>
+            
+            <div class="logof">
+                <a href="error.html"><img src="img/logo/logo_done.webp" alt="Øst for Paradis logo"></a>
+                <div class="socialf">
+                    <a href="https://www.facebook.com/oestforparadisbio/"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/oestforparadis/"><i class="fab fa-instagram"></i></a>
+                </div>
             </div>
+
+            <ul class="linksf">
+                <li><a href="error.html">Persondata</a></li>
+                <li><a href="error.html">Cookies</a></li>
+                <li><a href="error.html">Vilkår</a></li>
+            </ul>
         </div>
 
-        <ul class="linksf">
-            <li><a href="error.html">Persondata</a></li>
-            <li><a href="error.html">Cookies</a></li>
-            <li><a href="error.html">Vilkår</a></li>
+        <ul class="bundf">
+            <li>+45 86 19 81 22</li>
+            <li id="bundfli2">Paradisgade 9c, <br class="brf2"> 8000 Aarhus C</li>
+            <li id="bundfli3">kontor@paradisbio.dk</li>
         </ul>
-    </div>
-
-    <ul class="bundf">
-        <li>+45 86 19 81 22</li>
-        <li id="bundfli2">Paradisgade 9c, <br class="brf2"> 8000 Aarhus C</li>
-        <li id="bundfli3">kontor@paradisbio.dk</li>
-    </ul>
-</footer>
-<!-- footer slut -->
+    </footer>
+    <!-- FOOTER SLUT -->
 </body>
 </html>
