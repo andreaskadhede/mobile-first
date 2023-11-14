@@ -21,7 +21,7 @@
     -->
 
 </head>
-<body>
+<body class="film-body">
     <header>
                 <!-- navbar start -->
 
@@ -33,23 +33,23 @@
     
         <section class="film-box1">
             <img src="/img/movieposter/bastarden-movieposter.jpg" alt="Bastarden">
-            <h1>Bastarden</h1>
-            <p>Book billet:</p>
-            
-            <div class="film-box1_1">
-            <a href="#">12:30</a>
-            <a href="#">14:15</a>
-            </div>
-
-            <div class="film-box1_2">
-            <a href="#">16:30</a>
-            <a href="#">20:00</a>
-            </div>
+                <h1>Bastarden</h1>
+                <p>Book billet:</p>
+    
+                <div class="film-box1_1">
+                <a href="#">12:30</a>
+                <a href="#">14:15</a>
+                </div>
+    
+                <div class="film-box1_2">
+                <a href="#">16:30</a>
+                <a href="#">20:00</a>
+                </div>
 
         </section>
 
 <!-- Tekniske filmopblysninger -->
-<section class="film-box2">
+<div class="film-box2">
     <p>
     <b>Spilletid:</b> 2t 8 min. <br>
     <b>Censur:</b> Tilladt for børn over 15 år <br>
@@ -57,19 +57,29 @@
 </p>
 <br> 
 <button>Læs mere...</button>
-</section>
+</div>
 
 <!-- Filmbeskrivelse -->
 <section class="film-box3">
 <h2>Filmbeskrivelse</h2>
 <p>Filmen 'Bastarden' bygger på Ida Jessens bog 'Kaptajnen og Ann Barbara'. Den fortæller historien om den jyske uopdyrkede hede og kampen om denne i 1750’ernes Danmark. Filmen trækker os igennem lidenskab, mål, landskab og passion. </p>
-<button>Læs mere...</button>
+
+<input type="checkbox" id="læsmereknapf">
+<label id="filmknap" for="læsmereknapf">Læs mere...</label>
+
+<div id="læsmeretekstf">
+  <p>Den fattige kaptajn Ludvig Kahlen forsøger sig i 1755, at opdyrke den jyske hede, som ingen har haft held med indtil videre. Det går ikke let for sig, og han møder kraftig modstand. Frederik de Schinkel prøver at kæmpe imod ham på den ene og den anden måde. </p>
+
+</div>
+
+
+
 </section>
 
 <!-- Trailer -->
 <section class="film-box4">
 <h2>Trailer</h2> <br>
-<iframe src="https://www.youtube.com/embed/-MLuALgrg_k?si=EDznUFG5mcWU38Cz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe src="https://www.youtube.com/embed/-MLuALgrg_k?si=EDznUFG5mcWU38Cz" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </section>
 
 <!-- Anmeldelser -->
@@ -77,7 +87,18 @@
 <h2>Anmeldelser</h2>
 <img src="/img/stjerner.svg" alt="Stjerner">
 <br>
-<button>Læs mere...</button>
+<input type="checkbox" id="læsmereknapa">
+<label id="anmeldelsesknap" for="læsmereknapa">Læs anmeldelser...</label>
+
+<div id="læsmereteksta">
+    <h3>Cinemateket</h3>
+    <p> "Bastarden" er en dansk westernfilm, skabt af instruktøren Nikolaj Arcel og med den prisbelønnede skuespiller Mads Mikkelsen i front. Cinemateket er fulde af begejstring for filmen. De fremhæver filmens unikke stil, den engagerende historie og de imponerende skuespilpræstationer. </p> 
+       <button>Læs mere..</button>  
+     
+    <h3>Politiken</h3>
+    <p>Den nye film ‘’Bastarden’’ overgår alles forventninger. Mads Mikkelsen kan opleves endnu engang i frontfigur i den danske filmhistorie. Kunsten i skuespillernes præstation spejles godt i filmen.</p> 
+        <button>Læs mere..</button>
+</div>
 </section>
 
 </main>
