@@ -1,0 +1,104 @@
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+/* styling af body */
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: normal;
+  background-color: #2a3f52;
+  color: white;
+  width: 100%;
+}
+
+/* Banner styling */
+.banner {
+  width: 100%;
+  margin: auto;
+  
+}
+
+/* Program styling */
+.datof {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.box-rod {
+  background-color: #982216;
+  padding: 0.3rem;
+  font-size: 0.8rem;
+  margin: 0.1rem;
+}
+
+.box-rod p {
+  font-size: 0.6rem;
+}
+
+.box-sort {
+  background-color: black;
+  padding: 0.3rem;
+  font-size: 0.8rem;
+  margin: 0.1rem;
+}
+
+.box-sort p {
+  font-size: 0.6rem;
+}
+
+.programp {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 1rem;
+}
+
+.posterp {
+  width: 8.5rem;
+  height: auto;
+  margin: auto;
+}
+
+.tider {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.tider div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: #982216;
+  font-size: 1rem;
+  width: 3.5rem;
+  height: 1.5rem;
+}
+
+.prop {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 50%;
+}
+
+.prop p {
+  font-size: 0.8rem;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 0.5rem;
+  width: 8.5rem;
+ 
+}

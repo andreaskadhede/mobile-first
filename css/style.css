@@ -18,47 +18,142 @@ body {
 /*************************************************************************************************************************************/
 /*************************************************************** NAVBAR **************************************************************/
 /*************************************************************************************************************************************/
+nav {
+    background-color: black;
+    height: 5rem;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: inline-block;
+}
+
+/* LOGO */
+#navlogo {
+    height: 2rem;
+    float: left;
+    margin: 1.5rem 1.5rem;
+}
+
+/* IKONER */
+.icon {
+    font-size: 2rem;
+    float: right;
+    margin: 0 0.25rem;
+    cursor: pointer;
+    display: block;
+    line-height: 5rem;
+}
+
+#check {
+    display: none;
+}
+
+#check:checked ~ .dropdown-menu {
+    left: 0;
+}
+
+.fa-bars {
+    margin-right: 15px;
+}
+
+.dropdown {
+    width: 10rem;
+}
+
+.dropdown-menu {
+    margin-top: 5rem;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    left: 100%;
+    background-color: gray;
+    transition: 1s;
+    display: flex;
+    flex-direction: column;
+}
+
+.dropdown-content {
+    display: none;
+    font-size: 1rem;
+    float: left;
+    overflow: hidden;
+    width: 30rem;
+}
+
+.submenu-content {
+    display: none;
+    font-size: 0.5rem;
+}
+
+.dropdown-content, .submenu-content {
+    display: none;
+    position: absolute;
+    background-color: none;
+}
 
 
+.button, .dropdown-content a, .submenu-content a {
+    color: white;
+    display: block;
+    text-align: left;
+    width: 12rem;
+    height: 2rem;
+    font-size: 1.1rem;
+    line-height: 2rem;
+    padding-left: 5px;
+    background-color: black;
+}
 
+.dropbutton, .subbutton, .dropdown-content a {
+    float: left;
+    left: 12rem;
+}
 
+.dropdown-content a {
+    float: left;
+    left: 22rem;
+}
 
+.dropdown-content a, .submenu a, .submenu-content a {
+    font-size: 0.8rem;
+    width: 10rem;
+}
 
+.dropdown-content a, .submenu a {
+    margin-left: 12rem;
+}
 
+.submenu-content a {
+    height: 2rem;
+    line-height: 2rem;
+    margin-left: 22rem;
+    float: left;
+    left: 22rem;
+}
 
+.submenu-content .specieltpunkt, .dropdown-content .specieltpunkt {
+    line-height: 1rem;
+}
 
+.dropdown:hover .dropdown-content{
+    display: block;
+  }
 
+.submenu:hover .submenu-content {
+    display: block;
+}
+
+.button:hover, .dropdown a:hover, .submenu a:hover {
+    background-color: #2a3f52;
+}
+
+.search {
+    display: none;
+}
 
 /*************************************************************************************************************************************/
 /********************************************************** FORSIDE/PROGRAM **********************************************************/
 /*************************************************************************************************************************************/
-.banner {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-}
-.trapper {
-    position: absolute;
-    width: 100%;
-    height: auto;
-    z-index: 0;
-}
-
-.sb {
-    position: relative;
-    z-index: 1;
-}
-
-.lefta {
-    z-index: 1;
-    color: black;
-}
-
-.righta {
-    z-index: 1;
-    color: black;
-}
 
 /*************************************************************************************************************************************/
 /************************************************************* FILM *************************************************************/
