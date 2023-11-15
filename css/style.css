@@ -429,7 +429,7 @@ nav {
 .knap {
     display: block;
     padding: 10px 0 0;
-    font-size: 0.8rem;
+    font-size: 1rem;
 }
 
 .knap:hover {
@@ -489,7 +489,7 @@ nav {
 }
 
 /* Styling af billeder */
-.klubber div img {
+.klubber .klubber-box img {
     width: 100%;
     align-items: center; 
     margin: 25px 0 10px;
@@ -617,7 +617,7 @@ nav {
 
 .logof a img {
     color: inherit;
-    height: 3rem;
+    height: 2rem;
     padding-bottom: 3px ;
 }
 
@@ -693,7 +693,9 @@ nav {
 
     /* IKONER OG LOGO */
     #navlogo {
-        height: 2.5rem;
+        height: 3rem;
+        float: left;
+        margin: 1rem;
     }
 
     .fa-bars, .fa-magnifying-glass  {
@@ -709,7 +711,7 @@ nav {
     .icon {
         font-size: 2rem;
         float: right;
-        margin: 0 0.25rem;
+        margin: 0 0.5rem 0 0;
         cursor: pointer;
         display: block;
         line-height: 5rem;
@@ -797,21 +799,16 @@ nav {
 /* Breakpoint til tablet */
 @media (max-width: 767px) {
     nav {
-        height: 6rem;
-    }
-
-    #navlogo {
-        height: 3rem;
-        float: left;
-        margin: 1rem;
+        height: 5rem;
     }
     
     #menu {
-        gap: 0.5rem;
+        gap: 1rem;
     }
 
     .menupunkt a, .menupunkt p {
         font-size: 1rem;
+        width: 20rem;
     }
 
     .undermenupunkt p, .undermenupunkt a {
@@ -819,7 +816,7 @@ nav {
     }
     
     .underundermenupunkt p, .underundermenupunkt a {
-        font-size: 0.5rem;
+        font-size: 0.65rem;
     }
 }
 
@@ -1023,7 +1020,7 @@ nav {
     
     .knap {
         display: block;
-        padding: 25px 0 0;
+        padding: 20px 0 0;
         font-size: 1rem;
     }
    } 
@@ -1118,11 +1115,11 @@ nav {
 
     .klubber p {
         margin: 10px 0 5px;
-        font-size: 1.4rem;
+        font-size: 1.2rem;
     }
 
     /* Styling af indhold*/
-    .klubber article {
+    .klubber .klubber-box {
         margin: 3rem 0;
     }
 
@@ -1134,25 +1131,25 @@ nav {
     }
 
     /* Styling af underoverskrifter */
-    .klubber article h2 {
+    .klubber .klubber-box h2 {
         font-size: 2.3rem;
         margin: 0;
     }
 
     /* Styling af tekst */
-    .klubber article p {
+    .klubber .klubber-box p {
         margin: 10px 0;
-        font-size: 1.4rem;
+        font-size: 1rem;
     }
 
     /* Styling af billeder */
-    .klubber article .img {
+    .klubber .klubber-box .img {
         width: 40%;
         align-items: center; 
         margin: 5px 0;
     }
 
-    .klubber article .img img {
+    .klubber .klubber-box .img img {
         margin: 0;
     }
 
@@ -1167,10 +1164,15 @@ nav {
     .klubber-img-tablet {
         display: block;
     }
+
 }
 
 /* Breakpoint til laptop */
 @media (min-width: 1024px) {
+    .klubber {
+        margin: 10rem 12% 1.5rem;
+        width: 76%;
+    }
 
     .klubber p {
         font-size: 1rem;
@@ -1181,17 +1183,17 @@ nav {
     }
 
     /* Styling af billeder */
-    .klubber article .img {
+    .klubber .klubber-box .img {
         width: 35%;
     }
 
     /* Styling af underoverskrifter */
-    .klubber article h2 {
+    .klubber .klubber-box h2 {
         font-size: 1.9rem;
     }
 
     /* Styling af tekst */
-    .klubber article p {
+    .klubber .klubber-box p {
         font-size: 1rem;
     }
 
@@ -1209,11 +1211,6 @@ nav {
 /*********************************************************** MEDIA TIL ERROR *********************************************************/
 /* Breakpoint til tablet */
 @media (min-width: 768px) {
-    /* .hov {
-        margin: 8rem 5% 2rem;
-        width: 90%;
-        height: 53vh;
-    } */
 
     .hov {
         margin: 10rem 15% 4rem;
@@ -1233,12 +1230,6 @@ nav {
         width: 90%;
         height: 50vh;
     }
-
-    /* .hov {
-        margin: 11rem 19% 3rem;
-        width: 62%;
-        height: 50vh; 
-    } */
 
     #errorbr {
         display: none;
@@ -1261,12 +1252,36 @@ nav {
 /* Breakpoint til tablet */
 @media (min-width: 768px){
     .footer {
-        font-size: 0.8rem;
-        height: 11rem;
+        font-size: 0.7rem;
+        height: 8rem;
     }
 
     .logof a img {
-        height: 5rem;
+        height: 2.5rem;
+    }
+    
+    .socialf a {
+        font-size: 1.75rem;
+    }
+
+    .linksf, .titelf {
+        font-size: 1.25rem;
+    }
+
+    .bundf {
+        font-size: 0.75rem;
+    }
+}
+
+/* Breakpoint til laptop */
+@media (min-width: 1024px) {
+    .footer {
+        font-size: 0.8rem;
+        height: 9.5rem;
+    }
+
+    .logof a img {
+        height: 3rem;
     }
     
     .socialf a {
