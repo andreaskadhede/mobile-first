@@ -2,164 +2,438 @@
     padding: 0;
     margin: 0;
     text-decoration: none;
+    list-style: none;
     box-sizing: border-box;
 }
 
 /* styling af body */
 body {
     font-family: 'Roboto', sans-serif;
-    font-weight: 400;
+    font-weight: 300;
     background-color: #2a3f52;
     color: white;
     width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 300;
 }
 
 
 /*************************************************************************************************************************************/
 /*************************************************************** NAVBAR **************************************************************/
 /*************************************************************************************************************************************/
+
 nav {
     background-color: black;
-    height: 5rem;
+    height: 8rem;
     position: fixed;
     top: 0;
     width: 100%;
     display: inline-block;
+    z-index: 5;
 }
 
 /* LOGO */
 #navlogo {
-    height: 2rem;
+    height: 5rem;
     float: left;
     margin: 1.5rem 1.5rem;
 }
 
-/* IKONER */
-.icon {
-    font-size: 2rem;
-    float: right;
-    margin: 0 0.25rem;
-    cursor: pointer;
+/* SØGEFELT KOMMER FREM + STYLING */
+.search {
+    position: absolute;
     display: block;
-    line-height: 5rem;
+    right: 2rem;
+    line-height: 1rem;
+    padding: 0.5rem 0;
+    width: 15rem;
+    border: none;
+    top: 2.5rem;
+    font-size: 1rem;
+    background-color: #2a3f52;
+    border-radius: 10px;
+    color: white;
+    z-index: 1;
 }
 
+.fa-magnifying-glass {
+    font-size: 1.5rem;
+    float: right;
+    right: 2.5rem;
+    top: 3rem;
+    cursor: pointer;
+    display: block;
+    line-height: 1rem;
+    position: relative;
+    z-index: 3;
+}
+
+
+
+.fa-bars {
+    display: none;
+}
+
+
+/* NAVBAR */
 #check {
     display: none;
 }
 
-#check:checked ~ .dropdown-menu {
-    left: 0;
-}
-
-.fa-bars {
-    margin-right: 15px;
-}
-
-.dropdown {
-    width: 10rem;
-}
-
-.dropdown-menu {
-    margin-top: 5rem;
-    position: fixed;
-    width: 100%;
-    height: 100vh;
-    left: 100%;
-    background-color: gray;
-    transition: 1s;
-    display: flex;
-    flex-direction: column;
-}
-
-.dropdown-content {
-    display: none;
-    font-size: 1rem;
-    float: left;
-    overflow: hidden;
-    width: 30rem;
-}
-
-.submenu-content {
-    display: none;
-    font-size: 0.5rem;
-}
-
-.dropdown-content, .submenu-content {
-    display: none;
+#menu {
     position: absolute;
-    background-color: none;
-}
-
-
-.button, .dropdown-content a, .submenu-content a {
-    color: white;
-    display: block;
-    text-align: left;
-    width: 12rem;
-    height: 2rem;
-    font-size: 1.1rem;
-    line-height: 2rem;
-    padding-left: 5px;
+    top: 7rem;
+    width: 100%;
+    padding: 0 0 0 6.5%;
     background-color: black;
 }
 
-.dropbutton, .subbutton, .dropdown-content a {
-    float: left;
-    left: 12rem;
+.menupunkt {
+    display: inline-block;
+    width: 14.5%;
 }
 
-.dropdown-content a {
-    float: left;
-    left: 22rem;
+.menupunkt p, .menupunkt a {
+    font-size: 1rem;
+    color: white;
+    padding: 0 0 0 5px;
 }
 
-.dropdown-content a, .submenu a, .submenu-content a {
-    font-size: 0.8rem;
-    width: 10rem;
-}
-
-.dropdown-content a, .submenu a {
-    margin-left: 12rem;
-}
-
-.submenu-content a {
-    height: 2rem;
-    line-height: 2rem;
-    margin-left: 22rem;
-    float: left;
-    left: 22rem;
-}
-
-.submenu-content .specieltpunkt, .dropdown-content .specieltpunkt {
-    line-height: 1rem;
-}
-
-.dropdown:hover .dropdown-content{
-    display: block;
-  }
-
-.submenu:hover .submenu-content {
-    display: block;
-}
-
-.button:hover, .dropdown a:hover, .submenu a:hover {
-    background-color: #2a3f52;
-}
-
-.search {
+.undermenu, .underundermenu {
     display: none;
+}
+
+
+.undermenupunkt p, .undermenupunkt a {
+    display: block;
+    font-size: 1rem;
+    color: white;
+    background-color: black;
+    width: 10rem;
+    padding: 5px;
+}
+
+
+.underundermenu {
+    float: left;
+    left: 10rem;
+    top: 0;
+}
+
+.underundermenupunkt p, .underundermenupunkt a {
+    display: block;
+    font-size: 1rem;
+    color: white;
+    background-color: black;
+    width: 8rem;
+    padding: 5px;
 }
 
 /*************************************************************************************************************************************/
 /********************************************************** FORSIDE/PROGRAM **********************************************************/
 /*************************************************************************************************************************************/
 
+.program {
+    margin: 7rem 5% 0;
+  }
+  
+  /* Banner */
+  .banner {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .trappe {
+    width: 100%;
+  }
+  
+  .tekstb {
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .banner h1 {
+    font-weight: normal;
+    font-size: 200%;
+  }
+  
+  .banner .tekstb i {
+    color: black;
+    font-size: 200%;
+  }
+  
+  /* Dato */
+  .datof {
+    display: block;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+    margin: 5% 0;
+    gap: 1%;
+  }
+  
+  .box-rod, .box-sort {
+    display: block;
+    width: 14%;
+    background-color: #982216;
+    padding: 0.4rem 0.2rem;
+    font-size: 0.7rem;
+  }
+
+  .box-sort {
+    background-color: black;
+  }
+  
+  .box-rod p, .box-sort p {
+    font-size: 0.5rem;
+  }
+  
+  .box-sort:hover {
+    background-color: #982216;
+  }
+  
+  /* Program */
+  .programp {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    gap: 0 4%;
+  }
+  
+  .posterp {
+    width: 100%;
+    height: auto;
+  }
+  
+  .linkbas {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .linkbas:hover {
+    opacity: 50%;
+  }
+  
+  .tider {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .tider div, .tider a {
+    text-align: center;
+    background-color: #982216;
+    color: white;
+    font-size: 1rem;
+    width: 48%;
+    padding: 2%;
+    margin: 3% 0 3% 0;
+  }
+  
+  .tider div:hover, .tider a:hover {
+    background-color: black;
+  }
+  
+  .tider .tomt {
+    background-color: #2a3f52;
+  }
+  
+  .tider .tomt:hover {
+    background-color: #2a3f52;
+  }
+  
+  .prop {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 48%;
+    margin: 0 0 5%;
+  }
+  
+  .prop p, .titleb {
+    font-size: 0.8rem;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 0.5rem;
+    width: 100%;
+    margin: 5% 0 5% 0;
+    color: white;
+  }
+  
+  .titleb:hover {
+    background-color: #982216;
+  }
+  
+  .prop .mobilp {
+    display: block;
+  }
+  
+  .prop .tabletp {
+    display: none;
+  }
+
 /*************************************************************************************************************************************/
 /************************************************************* FILM *************************************************************/
 /*************************************************************************************************************************************/
 
+.film {
+    text-align: left;
+    margin: 6rem 10% 1rem;
+    width: 80%;
+}
 
+/* styling af section 1 (filmplakat, overskrift, book billet, tider) */
+.film-box1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 70%;
+    margin: 0 15%;
+}
+
+.film-box1 img {
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.film-box1 h1 {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.film-box1_1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.film-box1 a {
+    background-color:  #982216;
+    padding: 0.3rem 1.2rem;
+    color: white;
+    margin: 0.3rem;
+}
+
+.film-box1 a:hover {
+    background-color: black;
+    transition: 0.5s;
+}
+
+
+/* styling af section 2 (grå boks m tekniske filmoplysninger) */
+.film-box2 {
+    display: inline-block;
+    width: 100%;
+    align-items: center;
+    text-align: left;
+    background-color: #6a7986;
+    padding: 5px;
+    margin-top: 1rem;
+}
+
+.film-box-laesmere2 p {
+    margin: 2px 0;
+}
+
+/* styling af section 3 (Filmbeskrivelse) */
+.film-box3 {
+    margin: 1rem 0;
+}
+
+.film-box3 h2, .film-box4 h2, .film-box5 h2 {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.film-box3 p {
+    font-size: 0.8rem;
+    margin: 1rem 0;
+}
+
+/* styling af section 4 (trailer) */
+.film-box4 {
+    margin: 1rem 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.film-box4 iframe {
+    width: 100%; 
+    height: 100%;
+    border: 0;
+    margin: 0;
+}
+
+
+/* styling af section 5 (anmeldelser) */
+.film-box5 {
+    margin: 1rem 0;
+}
+
+.film-box5 img {
+    height: 1.3rem;
+    align-items: left;
+    margin: 1rem 0 0.5rem;
+}
+
+.film-box5 h3 {
+    margin: 3% 0;
+}
+
+
+
+
+/* læs mere knap + læs mindre knapper */
+.film-box-laesmere2, .film-box-laesmere3, .film-box-laesmere5 {
+    display: none; /* Starter med at skjule mere tekst */
+}
+
+#film-laesmere2, #film-laesmere3, #film-laesmere5 {
+    display: none;
+}
+
+#film-laesmere2:checked ~ .film-box-laesmere2, #film-laesmere3:checked ~ .film-box-laesmere3, #film-laesmere5:checked ~ .film-box-laesmere5 {
+    display: block; /* Vis mere tekst, når man trykker på teksten/checkboxen */
+}
+
+#film-laesmere2:checked ~ .film-laesmere2-knap, #film-laesmere3:checked ~ .film-laesmere3-knap, #film-laesmere5:checked ~ .film-laesmere5-knap {
+    display: none;
+}
+
+.anmeldelse-link {
+    display: none;
+}
+
+.knap {
+    display: block;
+    padding: 10px 0 0;
+    font-size: 0.8rem;
+}
+
+.knap:hover {
+    color: #982216;
+}
 
 /*************************************************************************************************************************************/
 /************************************************************ STUDENTBIO *************************************************************/
@@ -174,66 +448,121 @@ nav {
 /************************************************************* KLUBBER ***************************************************************/
 /*************************************************************************************************************************************/
 
-/* Styling af klubber */
 .klubber {
     text-align: left;
-    margin:5%  18%;
-    font-weight: normal;
+    margin: 6rem  10% 1.5rem;
+    width: 80%;
 }
 
 /* Styling af overskrift */
 .klubber-h1 {
     text-align: center;
-    align-items: center;
     font-size: 3rem;
-    padding: 1rem;
+    margin: 1rem;
+    text-transform: uppercase;
 }
 
-/* Styling af flexbox 1 */
+.klubber p {
+    margin: 10px 0 5px;
+    font-size: 0.9rem;
+}
 
-.klubber-box1 {
+/* Styling af indhold*/
+.klubber article {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     width: 100%;
-
 }
 
-/* Styling af billede */
-.klubber-box1 img {
+/* Styling af underoverskrifter */
+.klubber article h2 {
+    font-size: 1.5rem;
+    margin: 5px 0;
+}
+
+/* Styling af tekst */
+.klubber article p {
+    margin: 5px 0;
+    font-size: 0.9rem;
+}
+
+/* Styling af billeder */
+.klubber article img {
     width: 100%;
     align-items: center; 
-    margin: 50px 0;
- }
-
-/* Styling af flexbox 2 */
-.klubber-box2 {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    margin: 25px 0 10px;
 }
 
-/* Styling af billede */
-.klubber-box2 img {
-    width: 100%;
-    align-items: left; 
-    margin: 50px 0;
- }
-
-/* Styling af flexbox 3 */
-.klubber-box3 {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+.klubber-img-mobil {
+    display: block;
+}
+.klubber-img-tablet {
+    display: none;
 }
 
-/* Styling af billede */
-.klubber-box3 img {
-    width: 100%;
-    align-items: center; 
-    margin: 50px 0;
- }
 
+/* læs mere knap + læs mindre knapper */
+.laesmere-tekst1, .laesmere-tekst2, .laesmere-tekst3  {
+    display: none;
+}
+
+#klubber-laesmere1, #klubber-laesmere2, #klubber-laesmere3  {
+    display: none;
+}
+
+#klubber-laesmere1:checked ~ .laesmere-tekst1, #klubber-laesmere2:checked ~ .laesmere-tekst2, #klubber-laesmere3:checked ~ .laesmere-tekst3 {
+    display: block;
+}
+
+#klubber-laesmere1:checked ~ .laesmere1, #klubber-laesmere2:checked ~ .laesmere2, #klubber-laesmere3:checked ~ .laesmere3 {
+    display: none;
+}
+
+/*************************************************************************************************************************************/
+/**************************************************************** ERROR **************************************************************/
+/*************************************************************************************************************************************/
+
+.hov {
+    margin: 6rem 5% 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #6a7986;
+    width: 90%;
+    height: 66vh;
+}
+
+/* .hov {
+    margin: 21rem 5% 20rem;
+    width: 90%;
+    height: 15rem;
+} */
+
+/* Error text */
+.text-title {
+    font-size: 4rem;
+    display: flex;
+    align-items: center;
+}
+
+.text-sub {
+    font-size: 1rem;
+}
+
+.text-error {
+    font-size: 0.8rem;
+    padding: 0 1.3rem;
+}
+
+.sider-error {
+    color: white;
+}
+    
+.sider-error:hover {
+    color: #982216;
+}
 
 /*************************************************************************************************************************************/
 /*************************************************************** FOOTER **************************************************************/
@@ -248,6 +577,7 @@ nav {
     font-size: 0.57rem;
     color: white;
     position: relative;
+    height: 8rem;
 }
 
 .topf {
@@ -307,6 +637,7 @@ nav {
 
 .linksf, .titelf {
     font-size: 0.9rem;
+
 }
 
 .linksf li {
@@ -345,6 +676,571 @@ nav {
 /*************************************************************** @MEDIA **************************************************************/
 /*************************************************************************************************************************************/
 
+/********************************************************** MEDIA TIL NAVBAR *********************************************************/
+/* Breakpoint til laptop */
+@media (min-width:1024px) {
+    .menupunkt:hover .undermenu, .undermenupunkt:hover .underundermenu {
+        display: block;
+        position: absolute;
+    }
+}
+
+@media (max-width: 1023px) {
+    nav {
+        height: 5rem;
+    }
+
+    /* IKONER OG LOGO */
+    #navlogo {
+        height: 2.5rem;
+    }
+
+    .fa-bars, .fa-magnifying-glass  {
+        display: block;
+        float: right;
+        font-size: 2.5rem;
+        right: 0;
+        margin: 0 0.5rem;
+        line-height: 5rem;
+        top: 0;
+    }
+
+    .icon {
+        font-size: 2rem;
+        float: right;
+        margin: 0 0.25rem;
+        cursor: pointer;
+        display: block;
+        line-height: 5rem;
+    }
+    
+    .search {
+        display: none;
+    }
+
+    #menu {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        background: black;
+        top: 5rem;
+        text-align: left;
+        left: 100%;
+        transition: all .5s;
+        margin: 0;
+        padding: 0 1rem;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    .undermenu, .underundermenu {
+        display: block;
+    }
+    .menupunkt {
+        display: block;
+        width: 30%;
+    }
+    
+    .menupunkt a, .menupunkt p {
+        display: block;
+        font-size: 1.45rem;
+    }
+
+    .undermenu {
+        float: left;
+        left: 10rem;
+        top: 0;
+        display: block;
+    }
+    
+    .undermenupunkt p, .undermenupunkt a {
+        display: block;
+        font-size: 1.2rem;
+        color: white;
+        background-color: black;
+        padding: 1px 0 1px 1rem;
+        width: 100%;
+    }
+    
+    .underundermenu {
+        float: left;
+        left: 20rem;
+        top: 0;
+    }
+    
+    .underundermenupunkt p, .underundermenupunkt a {
+        display: block;
+        font-size: 1rem;
+        color: white;
+        background-color: black;
+        width: 15rem;
+        padding: 1px 0 1px 2rem;
+    }
+
+    /* BURGERMENU KOMMER FREM VED KLIK */
+    #check:checked ~ #menu {
+        left: 0;
+    }
+
+    .menupunkt4 {
+        order: 1;
+    }
+
+    .menupunkt6 {
+        order: 2;
+    }
+}
+
+/* Breakpoint til tablet */
+@media (max-width: 767px) {
+    nav {
+        height: 6rem;
+    }
+
+    #navlogo {
+        height: 3rem;
+        float: left;
+        margin: 1rem;
+    }
+    
+    #menu {
+        gap: 0.5rem;
+    }
+
+    .menupunkt a, .menupunkt p {
+        font-size: 1rem;
+    }
+
+    .undermenupunkt p, .undermenupunkt a {
+        font-size: 0.75rem;
+    }
+    
+    .underundermenupunkt p, .underundermenupunkt a {
+        font-size: 0.5rem;
+    }
+}
+
+/***************************************************** MEDIA TIL FORSIDE/PROGRAM *****************************************************/
+
+/* Breakpoint til tablet */ 
+@media (min-width: 768px) {
+    /* Banner */
+    .sb {
+        scale: 2;
+    }
+    
+    .banner .tekstb i {
+        scale: 2;
+    }
+    
+    /* Datoer */
+    .datof {
+        height: auto;
+        width: auto;
+    }
+
+    .box-rod, .box-sort {
+        padding: 0.8rem 0.2rem;
+    }
+    
+    .box-rod .p1, .box-sort .p1 {
+        font-size: 1.8rem;
+        padding: 0.7%;
+    }
+    
+    .box-rod .p2, .box-sort .p2 {
+        font-size: 1.4rem;
+    }
+    
+    /* Program */
+    .prop {
+        width: 30.6%;
+    }
+    .prop .mobilp {
+        display: none;
+    }
+      
+    .prop .tabletp {
+        display: block;
+    }
+}
+
+/* Breakpoint til laptop */ 
+@media (min-width: 1024px) {
+    .program {
+      margin: 5% 10%;
+    }
+  
+  /* Datoer */
+    .datof {
+    height: auto;
+    width: 100%;
+    }
+    .box-rod, .box-sort {
+    font-size: 100%;
+    }
+  
+    .box-rod p, .box-sort p {
+    font-size: 100%;
+    }
+  
+  /* Program */
+  .programp {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    }
+  
+    .prop {
+    display: flex;
+    flex-wrap: wrap;
+    width: 25%;
+    }
+  
+    .tider div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    }
+  }
+
+
+/********************************************************** MEDIA TIL FILM ***********************************************************/
+
+/* Breakpoint til tablet */ 
+@media (min-width: 768px) { 
+    
+    .film {
+        margin: 8rem 12% 1.5rem;
+        width: 76%;
+    }
+    
+    /* styling af section 1 (filmplakat, overskrift, book billet, tider) */
+    .film-box1 {
+        display: flex;
+        flex-direction: row;
+        margin: 0;
+        width: 100%;
+        align-items: flex-start;
+    }
+    .film-intro {
+        width: 45%;
+    }
+
+    .film-box1 .img {
+        width: 55%;
+        margin: 0;
+    }
+
+    .film-box1 .img img {
+        margin: 0;
+    }
+    
+    .film-box1 h1 {
+        font-size: 2rem;
+        font-weight: 600;
+        text-align: left;
+        margin: 0 10px 10px;
+    }
+
+    .film-box1 p {
+        font-size: 1.4rem;
+        text-align: left;
+        margin: 0 10px;
+    }
+
+    .film-box1_1 {
+        justify-content: flex-start;
+        margin: 0 10px;
+    }
+
+    .film-box1 a {
+        margin: 0.5rem 1rem 0.5rem 0;
+        font-size: 1.4rem;
+    }
+    
+
+    /* styling af section 2 (grå boks m tekniske filmoplysninger) */
+    .film-box2 {
+        padding: 30px;
+    }
+
+    .film-box-laesmere2 p {
+        margin: 2px 0;
+    }
+    
+    /* styling af section 3 (Filmbeskrivelse) */
+    
+    .film-box3 h2, .film-box4 h2, .film-box5 h2 {
+        font-size: 1.2rem;
+        font-weight: 600;
+    }
+    
+    .film-box3 p {
+        font-size: 1rem;
+        margin: 1rem 0;
+    }
+    
+
+
+    /* styling af section 4 (trailer) */
+    
+    .film-box4 iframe {
+        width: 100%; 
+        height: 50vh;
+    }
+    
+    
+    /* styling af section 5 (anmeldelser) */
+    .film-box5 img {
+        height: 3rem;
+    }
+
+
+    .film-box-laesmere3, .film-box-laesmere5 {
+        display: block;
+    }
+    
+    .film-box3 label, .film-box-laesmere3 .film-laesmere5-knap, .film-box5 label, .film-box-laesmere5 .film-laesmere5-knap {
+        display: none;
+    }
+    
+    .anmeldelse-link {
+        display: block;
+        font-size: 1rem;
+        color: white;
+        margin: 5px 0;
+    }
+    
+    .knap {
+        display: block;
+        padding: 25px 0 0;
+        font-size: 1rem;
+    }
+   } 
+    
+    
+    /* Breakpoint til laptop */ 
+    @media (min-width: 1024px) {
+        .film {
+            margin: 10rem 15% 1.5rem;
+            width: 70%;
+        }
+        
+        /* styling af section 1 (filmplakat, overskrift, book billet, tider) */
+        .film-box1 {
+            display: flex;
+            flex-direction: row;
+            margin: 0;
+            width: 100%;
+            align-items: flex-start;
+        }
+        .film-intro {
+            width: 35%;
+        }
+    
+        .film-box1 .img {
+            width: 65%;
+        }
+    
+        
+        .film-box1 h1 {
+            font-size: 2.5rem;
+            margin: 0 20px 10px;
+        }
+    
+        .film-box1 p {
+            font-size: 1.7rem;
+            margin: 0 20px;
+        }
+    
+        .film-box1_1 {
+            margin: 0 20px;
+        }
+    
+        .film-box1 a {
+            margin: 0.75rem 2rem 0.75rem 0;
+            font-size: 1.55rem;
+        }
+        
+    
+        /* styling af section 2 (grå boks m tekniske filmoplysninger) */
+        .film-box2 {
+            font-size: 1.5rem;
+        }
+    
+        
+        /* styling af section 3 (Filmbeskrivelse) */
+        
+        .film-box3 h2, .film-box4 h2, .film-box5 h2 {
+            font-size: 1.7rem;
+        }
+        
+        .film-box3 p {
+            font-size: 1rem;
+            margin: 1rem 0;
+        }
+        
+    
+    
+        /* styling af section 4 (trailer) */
+        
+        .film-box4 iframe {
+            height: 65vh;
+        }
+    
+        
+        .knap {
+            font-size: 1.5rem;
+        }
+       } 
+    
+/******************************************************** MEDIA TIL STUDENTBIO *******************************************************/
+
+/********************************************************** MEDIA TIL KLUBBER ********************************************************/
+
+/* Breakpoint til tablet */
+@media (min-width: 768px) {
+
+    .klubber {
+        margin: 6rem 12% 1.5rem;
+        width: 76%;
+    }
+
+    .klubber p {
+        margin: 10px 0 5px;
+        font-size: 1.4rem;
+    }
+
+    /* Styling af indhold*/
+    .klubber article {
+        margin: 3rem 0;
+    }
+
+    .klubber-tekst {
+        display: flex;
+        width: 60%;
+        padding: 0 10px 5px;
+        flex-direction: column;
+    }
+
+    /* Styling af underoverskrifter */
+    .klubber article h2 {
+        font-size: 2.3rem;
+        margin: 0;
+    }
+
+    /* Styling af tekst */
+    .klubber article p {
+        margin: 10px 0;
+        font-size: 1.4rem;
+    }
+
+    /* Styling af billeder */
+    .klubber article .img {
+        width: 40%;
+        align-items: center; 
+        margin: 5px 0;
+    }
+
+    .klubber article .img img {
+        margin: 0;
+    }
+
+    .klubber-ekstra {
+        display: none;
+    }
+
+    .klubber-img-mobil {
+        display: none;
+    }
+
+    .klubber-img-tablet {
+        display: block;
+    }
+}
+
+/* Breakpoint til laptop */
+@media (min-width: 1024px) {
+
+    .klubber p {
+        font-size: 1rem;
+    }
+
+    .klubber-tekst {
+        width: 65%;
+    }
+
+    /* Styling af billeder */
+    .klubber article .img {
+        width: 35%;
+    }
+
+    /* Styling af underoverskrifter */
+    .klubber article h2 {
+        font-size: 1.9rem;
+    }
+
+    /* Styling af tekst */
+    .klubber article p {
+        font-size: 1rem;
+    }
+
+    /* læs mere knap + læs mindre knapper */
+    .laesmere-tekst1, .laesmere-tekst2, .laesmere-tekst3  {
+        display: block;
+    }
+
+    .laesmindre1, .laesmere1, .laesmindre2, .laesmere2, .laesmindre3, .laesmere3 {
+        display: none;
+    }
+}
+
+
+/*********************************************************** MEDIA TIL ERROR *********************************************************/
+/* Breakpoint til tablet */
+@media (min-width: 768px) {
+    /* .hov {
+        margin: 8rem 5% 2rem;
+        width: 90%;
+        height: 53vh;
+    } */
+
+    .hov {
+        margin: 10rem 15% 4rem;
+        width: 70%;
+        height: 44vh;
+    }
+
+    #errorbr {
+        display: none;
+    }
+}
+
+/* Breakpoint til laptop */
+@media (min-width: 1024px) {
+    .hov {
+        margin: 11rem 5% 3rem;
+        width: 90%;
+        height: 50vh;
+    }
+
+    /* .hov {
+        margin: 11rem 19% 3rem;
+        width: 62%;
+        height: 50vh; 
+    } */
+
+    #errorbr {
+        display: none;
+    }
+}
+/********************************************************** MEDIA TIL FOOTER *********************************************************/
+
 @media (min-width: 385px){
     .brf1{
         display: none;
@@ -360,7 +1256,8 @@ nav {
 /* Breakpoint til tablet */
 @media (min-width: 768px){
     .footer {
-        font-size: 1rem;
+        font-size: 0.8rem;
+        height: 11rem;
     }
 
     .logof a img {
@@ -372,7 +1269,7 @@ nav {
     }
 
     .linksf, .titelf {
-        font-size: 1.2rem;
+        font-size: 1.5rem;
     }
 
     .bundf {
