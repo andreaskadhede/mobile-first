@@ -96,6 +96,7 @@ nav {
     display: none;
     position: absolute;
     background-color: none;
+    z-index: 1;
 }
 
 
@@ -116,25 +117,26 @@ nav {
     left: 12rem;
 }
 
+.dropbutton {
+    z-index: 10;
+}
+
 .dropdown-content a {
     float: left;
     left: 22rem;
+    z-index: 1;
 }
 
 .dropdown-content a, .submenu a, .submenu-content a {
     font-size: 0.8rem;
     width: 10rem;
+    z-index: 1;
 }
 
-.dropdown-content a, .submenu a {
-    margin-left: 12rem;
-}
 
 .submenu-content a {
     height: 2rem;
     line-height: 2rem;
-    margin-left: 22rem;
-    float: left;
     left: 22rem;
     display: flex;
     align-items: center;
@@ -150,6 +152,16 @@ nav {
 
 .submenu:hover .submenu-content {
     display: block;
+}
+
+.menupunkt {
+    display: flex;
+    flex-direction: row;
+}
+
+.menupunkt a {
+    color: white;
+    font-size: 1rem;
 }
 
 /* DROPDOWNMENU SLUT */
@@ -226,9 +238,7 @@ nav {
     margin: 2px 0;
 }
 
-.film-box2 button:hover {
-    color: #982216;
-}
+
 
 /* styling af section 3 (Filmbeskrivelse) */
 .film-box3 {
@@ -271,43 +281,8 @@ nav {
     margin: 1rem 0 0.5rem;
 }
 
-#læsmereteksta {
-    display: none; /* Starter med at skjule mere tekst */
-  }
-
-  #læsmereknapa {
-    display: none;
-  } 
-
-  #filmknap:hover {
-    color: #982216;
-  }
-
-  #læsmereknapa:checked + label + #læsmereteksta {
-    display: block; /* Vis mere tekst, når man trykker på teksten/checkboxen */
-  }
-
-#anmeldelsesknap:hover {
-    color: #982216;
-}
-
 .film-box5 h3 {
     margin: 3% 0;
-}
-
-.film-box5 button {
-    margin: 0;
-    padding: 0;
-    font: inherit;
-    color: inherit;
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-    outline: none;
-}
-
-.film-box5 button:hover {
-    color: #982216;
 }
 
 
@@ -628,15 +603,19 @@ nav {
 
     .dropdown-menu a {
         background-color: black;
-        font-size: 0.85rem;
-        width: 7rem;
-        margin-left: 3rem;
+        margin: 0 0.5rem;
         text-wrap: nowrap;
     }
 
+    .submenu {
+        width: 10rem;
+    }
+    .fa-caret-down {
+        font-size: 0.85rem;
+        margin-top: 0.5rem;
+    }
 
     .dropdown-content a, .submenu a {
-        margin-left: 3rem;
         float: none;
         width: 10rem;
     }
