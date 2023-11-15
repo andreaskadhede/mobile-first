@@ -18,14 +18,23 @@
     margin: 5%;
   }
   
-  /* Banner styling start*/
-  .banner {
-   
+  /* Beskrivelse styling start*/
+
+  .studentbio-h1{
+    padding: 2%;
+  }
+
+  .beskrivelse {
     justify-content: center;
     align-items: center;
     width: 100%;
   }
   
+  .beskrivelse2{
+    padding: 1%;
+  }
+
+
   .trappe {
     width: 100%;
   }
