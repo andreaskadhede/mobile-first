@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     text-decoration: none;
+    list-style: none;
     box-sizing: border-box;
 }
 
@@ -25,7 +26,7 @@ h1, h2, h3, h4, h5, h6 {
 
 nav {
     background-color: black;
-    height: 5rem;
+    height: 8rem;
     position: fixed;
     top: 0;
     width: 100%;
@@ -34,140 +35,99 @@ nav {
 
 /* LOGO */
 #navlogo {
-    height: 2rem;
+    height: 5rem;
     float: left;
     margin: 1.5rem 1.5rem;
 }
 
-/* IKONER */
-.icon {
-    font-size: 2rem;
+/* SØGEFELT KOMMER FREM + STYLING */
+.search {
+    position: absolute;
+    display: block;
+    right: 2rem;
+    line-height: 1rem;
+    padding: 0.5rem 0;
+    width: 15rem;
+    border: none;
+    top: 2.5rem;
+    font-size: 1rem;
+    background-color: #2a3f52;
+    border-radius: 10px;
+    color: white;
+    z-index: 1;
+}
+
+.fa-magnifying-glass {
+    font-size: 1.5rem;
     float: right;
-    margin: 0 0.25rem;
+    right: 2.5rem;
+    top: 3rem;
     cursor: pointer;
     display: block;
-    line-height: 5rem;
+    line-height: 1rem;
+    position: relative;
+    z-index: 3;
 }
+
+
 
 .fa-bars {
-    margin-right: 15px;
+    display: none;
 }
 
+
+/* NAVBAR */
 #check {
     display: none;
 }
 
-/* BURGERMENU KOMMER FREM VED KLIK */
-#check:checked ~ .dropdown-menu {
-    left: 0;
-}
-
-/* DROPDOWNMENU START */
-.dropdown {
-    width: 10rem;
-}
-
-.dropdown-menu {
-    margin-top: 5rem;
-    position: fixed;
-    width: 100%;
-    height: 100vh;
-    left: 100%;
-    background-color: black;
-    transition: 1s;
-    display: flex;
-    flex-direction: column;
-}
-
-.dropdown-content {
-    display: none;
-    font-size: 1rem;
-    float: left;
-    overflow: hidden;
-    width: 30rem;
-}
-
-.submenu-content {
-    display: none;
-    font-size: 0.5rem;
-}
-
-.dropdown-content, .submenu-content {
-    display: none;
+#menu {
     position: absolute;
-    background-color: none;
-    z-index: 1;
-}
-
-
-.button, .dropdown-content a, .submenu-content a {
-    color: white;
-    display: block;
-    text-align: left;
-    width: 12rem;
-    height: 2rem;
-    font-size: 1.1rem;
-    line-height: 2rem;
-    padding-left: 5px;
+    top: 7rem;
+    width: 100%;
+    padding: 0 0 0 6.5%;
     background-color: black;
-}
-
-.dropbutton, .subbutton, .dropdown-content a {
-    float: left;
-    left: 12rem;
-}
-
-.dropbutton {
-    z-index: 10;
-}
-
-.dropdown-content a {
-    float: left;
-    left: 22rem;
-    z-index: 1;
-}
-
-.dropdown-content a, .submenu a, .submenu-content a {
-    font-size: 0.8rem;
-    width: 10rem;
-    z-index: 1;
-}
-
-
-.submenu-content a {
-    height: 2rem;
-    line-height: 2rem;
-    left: 22rem;
-    display: flex;
-    align-items: center;
-}
-
-.submenu-content .specieltpunkt, .dropdown-content .specieltpunkt {
-    line-height: 1rem;
-}
-
-.dropdown:hover .dropdown-content{
-    display: block;
-  }
-
-.submenu:hover .submenu-content {
-    display: block;
 }
 
 .menupunkt {
-    display: flex;
-    flex-direction: row;
+    display: inline-block;
+    width: 14.5%;
 }
 
-.menupunkt a {
-    color: white;
+.menupunkt p, .menupunkt a {
     font-size: 1rem;
+    color: white;
+    padding: 0 0 0 5px;
 }
 
-/* DROPDOWNMENU SLUT */
-
-.search {
+.undermenu, .underundermenu {
     display: none;
+}
+
+
+.undermenupunkt p, .undermenupunkt a {
+    display: block;
+    font-size: 1rem;
+    color: white;
+    background-color: black;
+    width: 10rem;
+    padding: 5px;
+}
+
+
+.underundermenu {
+    float: left;
+    left: 10rem;
+    top: 0;
+}
+
+.underundermenupunkt p, .underundermenupunkt a {
+    display: block;
+    font-size: 1rem;
+    color: white;
+    background-color: black;
+    width: 8rem;
+    padding: 5px;
 }
 
 /*************************************************************************************************************************************/
@@ -237,8 +197,6 @@ nav {
 .film-box-laesmere2 p {
     margin: 2px 0;
 }
-
-
 
 /* styling af section 3 (Filmbeskrivelse) */
 .film-box3 {
@@ -553,127 +511,153 @@ nav {
 /*************************************************************************************************************************************/
 
 /********************************************************** MEDIA TIL NAVBAR *********************************************************/
+/* Breakpoint til laptop */
+@media (min-width:1024px) {
+    .menupunkt:hover .undermenu {
+        display: block;
+        position: absolute;
+    }
+    .undermenupunkt:hover .underundermenu {
+        display: block;
+        position: absolute;
+    }
+}
+
+@media (max-width: 1023px) {
+    nav {
+        height: 5rem;
+    }
+
+    /* IKONER OG LOGO */
+    #navlogo {
+        height: 2.5rem;
+    }
+
+    .fa-bars, .fa-magnifying-glass  {
+        display: block;
+        float: right;
+        font-size: 2.5rem;
+        right: 0;
+        margin: 0 0.5rem;
+        line-height: 5rem;
+        top: 0;
+    }
+
+    .icon {
+        font-size: 2rem;
+        float: right;
+        margin: 0 0.25rem;
+        cursor: pointer;
+        display: block;
+        line-height: 5rem;
+    }
+    
+    .search {
+        display: none;
+    }
+
+    #menu {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        background: black;
+        top: 5rem;
+        text-align: left;
+        left: 100%;
+        transition: all .5s;
+        margin: 0;
+        padding: 0 1rem;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    .undermenu, .underundermenu {
+        display: block;
+    }
+    .menupunkt {
+        display: block;
+        width: 30%;
+    }
+    
+    .menupunkt a, .menupunkt p {
+        display: block;
+        font-size: 1.45rem;
+    }
+
+    .undermenu {
+        float: left;
+        left: 10rem;
+        top: 0;
+        display: block;
+    }
+    
+    .undermenupunkt p, .undermenupunkt a {
+        display: block;
+        font-size: 1.2rem;
+        color: white;
+        background-color: black;
+        padding: 1px 0 1px 1rem;
+        width: 100%;
+    }
+    
+    .underundermenu {
+        float: left;
+        left: 20rem;
+        top: 0;
+    }
+    
+    .underundermenupunkt p, .underundermenupunkt a {
+        display: block;
+        font-size: 1rem;
+        color: white;
+        background-color: black;
+        width: 15rem;
+        padding: 1px 0 1px 2rem;
+    }
+
+    /* BURGERMENU KOMMER FREM VED KLIK */
+    #check:checked ~ #menu {
+        left: 0;
+    }
+
+    .menupunkt4 {
+        order: 1;
+    }
+
+    .menupunkt6 {
+        order: 2;
+    }
+}
+
 /* Breakpoint til tablet */
-@media (min-width: 768px) {
+@media (max-width: 767px) {
     nav {
         height: 6rem;
     }
 
     #navlogo {
-        height: 4rem;
+        height: 3rem;
         float: left;
-        margin: 1rem 1.5rem;
+        margin: 1rem;
     }
     
-    /* IKONER */
-    .icon {
-        font-size: 2.5rem;
-        float: right;
-        margin: 0 0.5rem;
-        cursor: pointer;
-        display: block;
-        line-height: 6rem;
+    #menu {
+        gap: 0.5rem;
     }
 
-    .dropdown-menu {
-        margin-top: 6rem;
-    }
-}
-
-/* Breakpoint til laptop */
-@media (min-width: 1024px) {
-    nav {
-        height: 8rem;
-    }
-
-    /* IKONER OG LOGO */
-    .icon {
-        display: none;
-    }
-
-    
-    .dropdown-menu {
-        flex-direction: row;
-        justify-content: center;
-        height: 0;
-        left: 0;
-        flex-direction: row;
-        position: relative;
-    }
-
-    .dropdown-menu a {
-        background-color: black;
-        margin: 0 0.5rem;
-        text-wrap: nowrap;
-    }
-
-    .submenu {
-        width: 10rem;
-    }
-    .fa-caret-down {
-        font-size: 0.85rem;
-        margin-top: 0.5rem;
-    }
-
-    .dropdown-content a, .submenu a {
-        float: none;
-        width: 10rem;
-    }
-
-    .dropdown-content .buttonekstra {
-        margin-top: 2rem;
-    }
-
-    a #dropdown-contentspeciel .submenu a {
-        margin-left: -2rem;
-    }
-
-    .submenu-content{
-        float: left;
-        margin-left: 10rem;
-        margin-top: -2rem;
-        width: 10rem;
-    }
-
-    #navspeciel {
-        display: block;
-        margin-right: -0.5rem;
-    }
-
-    /* SØGEFELT KOMMER FREM + STYLING */
-    .search {
-        position: absolute;
-        display: block;
-        right: 2rem;
-        padding: 0.5rem 0;
-        width: 15rem;
-        border: none;
-        top: 2.5rem;
-        font-size: 1rem;
-        background-color: #2a3f52;
-        border-radius: 10px;
-        z-index: 1; 
-        color: white;
-    }
-
-    .fa-magnifying-glass {
-        display: block;
-        font-size: 1.5rem;
-        position: relative;
-        right: 2rem;
-        z-index: 2;
-        top: 0.5rem;
-    }
-
-    .dropdown .specieltpunkt {
-
-        text-wrap: wrap;
-    }
-
-    .dropdown .dropbutton, .dropdown-menu .dropbutton {
+    .menupunkt a, .menupunkt p {
         font-size: 1rem;
     }
 
+    .undermenupunkt p, .undermenupunkt a {
+        font-size: 0.75rem;
+    }
+    
+    .underundermenupunkt p, .underundermenupunkt a {
+        font-size: 0.5rem;
+    }
 }
 
 /***************************************************** MEDIA TIL FORSIDE/PROGRAM *****************************************************/
