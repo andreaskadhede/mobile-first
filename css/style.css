@@ -174,7 +174,7 @@ nav {
     flex-direction: row;
     text-align: center;
     margin: 5% 0;
-    gap: 2%;
+    gap: 2%; /* mellemrum imellem hver dag */
 }
   
 .box-rod, .box-sort {
@@ -199,7 +199,7 @@ nav {
     background-color: #982216;
 }
   
-/* PROGRAM*/
+/* PROGRAM */
 .programp {
     display: flex;
     flex-direction: row;
@@ -322,7 +322,6 @@ nav {
     transition: 0.5s;
 }
 
-
 /* TEKNISKE OPLYSNINGER */
 .film-box2 {
     display: inline-block;
@@ -344,13 +343,13 @@ nav {
 }
 
 .film-box3 h2, .film-box4 h2, .film-box5 h2 {
-    font-size: 1rem;
+    font-size: 0.8rem;
     font-weight: 600;
 }
 
 .film-box3 p {
     font-size: 0.8rem;
-    margin: 1rem 0;
+    margin: 0.5rem 0;
 }
 
 /* TRAILER */
@@ -373,20 +372,26 @@ nav {
 
 .film-box5 img {
     height: 1.3rem;
-    margin: 1rem 0 0.5rem;
+    margin: 1rem 0 0;
 }
 
 .film-box5 h3 {
-    margin: 3% 0;
+    font-size: 0.8rem;
+    margin: 1rem 0 0.5rem;
+    font-weight: 400;
+}
+
+.film-box5 p {
+    font-size: 0.8rem;
 }
 
 /* læs mere knap + læs mindre knapper */
 .film-box-laesmere2, .film-box-laesmere3, .film-box-laesmere5 {
-    display: none; /* Starter med at skjule mere tekst */
+    display: none; /* Skjuler "mere tekst" */
 }
 
 #film-laesmere2, #film-laesmere3, #film-laesmere5 {
-    display: none;
+    display: none; /* Fjerner input til læs mere/vis mindre */
 }
 
 #film-laesmere2:checked ~ .film-box-laesmere2, #film-laesmere3:checked ~ .film-box-laesmere3, #film-laesmere5:checked ~ .film-box-laesmere5 {
@@ -397,14 +402,10 @@ nav {
     display: none; /* Fjerne mere tekst, når man trykker vis mindre */
 }
 
-.anmeldelse-link {
-    display: none;
-}
-
-.knap, .knapf {
+.knap, .anmeldelse-link, .knapf  {
     display: block;
-    padding: 10px 0 0;
-    font-size: 1rem;
+    padding: 5px 0 0;
+    font-size: 0.8rem;
     color: white;
 }
 
@@ -416,10 +417,10 @@ nav {
 /************************************************************ STUDENTBIO *************************************************************/
 /*************************************************************************************************************************************/
 
-/* Beskrivelse */
+/* BESKRIVELSE */
 .studentbio-h1{
     text-align: center;
-    font-size: 2rem;
+    font-size: 2.5rem;
     margin: 1rem;
     text-transform: uppercase;
 }
@@ -433,7 +434,6 @@ nav {
     margin: 10px 0 5px;
 }
 
-/* Program */
 .tider .sort2{
     background-color: black;
 }
@@ -448,10 +448,10 @@ nav {
     width: 80%;
 }
 
-/* Styling af overskrift */
+/* OVERKSRIFT + BESKRIVELSE */
 .klubber-h1 {
     text-align: center;
-    font-size: 2rem;
+    font-size: 2.5rem;
     margin: 1rem;
     text-transform: uppercase;
 }
@@ -461,7 +461,7 @@ nav {
     font-size: 0.9rem;
 }
 
-/* Styling af indhold*/
+/* KLUBBERNE */
 .klubber .klubber-box {
     display: flex;
     flex-direction: row;
@@ -469,19 +469,16 @@ nav {
     width: 100%;
 }
 
-/* Styling af underoverskrifter */
 .klubber .klubber-box h2 {
     font-size: 1.5rem;
     margin: 5px 0;
 }
 
-/* Styling af tekst */
 .klubber .klubber-box p {
     margin: 5px 0;
     font-size: 0.9rem;
 }
 
-/* Styling af billeder */
 .klubber .klubber-box img {
     width: 100%;
     align-items: center; 
@@ -489,12 +486,12 @@ nav {
 }
 
 .klubber-img-mobil {
-    display: block;
-}
-.klubber-img-tablet {
-    display: none;
+    display: block; /* Rektangulært billede vises */
 }
 
+.klubber-img-tablet {
+    display: none; /* Kvadratisk billede vises */
+}
 
 /* læs mere knap + læs mindre knapper */
 .laesmere-tekst1, .laesmere-tekst2, .laesmere-tekst3  {
@@ -528,7 +525,7 @@ nav {
     height: 60vh;
 }
 
-/* Error text */
+/* TEKST */
 .text-title {
     font-size: 4rem;
     display: flex;
@@ -556,7 +553,6 @@ nav {
 /*************************************************************** FOOTER **************************************************************/
 /*************************************************************************************************************************************/
 
-
 .footer {
     padding: 10px 10px 0;
     background-color: black;
@@ -575,6 +571,7 @@ nav {
     color: inherit;
 }
 
+/* åbningstider */
 .aabningstiderf {
     display: flex;
     flex-direction: column;
@@ -591,7 +588,7 @@ nav {
     margin: 3px 0;
 }
 
-
+/* logo + facebooklogo */
 .logof {
     display: flex;
     flex-direction: column;
@@ -613,6 +610,7 @@ nav {
     font-size: 1.5rem;
 }
 
+/* footer links */
 .linksf {
     display: flex;
     flex-direction: column;
@@ -637,6 +635,7 @@ nav {
     margin: 3px 0;
 }
 
+/* footer info */
 .bundf {
     display: flex;
     flex-direction: row;
@@ -665,14 +664,16 @@ nav {
 /*************************************************************************************************************************************/
 
 /********************************************************** MEDIA TIL NAVBAR *********************************************************/
-/* Breakpoint til laptop */
+
 @media (min-width:1024px) {
     .menupunkt:hover .undermenu, .undermenupunkt:hover .underundermenu {
-        display: block;
+        display: block; /* undermenuer kommer frem ved at have musen over et menupunkt ved computer */
         position: absolute;
     }
 }
 
+
+/* Breakpoint til tablet */
 @media (max-width: 1023px) {
     nav {
         height: 5rem;
@@ -695,7 +696,7 @@ nav {
         top: 0;
     }
 
-    .icon {
+    .icon { /* burgermenu icon kommer frem */
         font-size: 2rem;
         float: right;
         margin: 0 0.5rem 0 0;
@@ -704,8 +705,9 @@ nav {
         line-height: 5rem;
     }
     
+    /* SØGEFELT */
     .search {
-        display: none;
+        display: none; /* søgefelt forsvinder */
     }
 
     #menu {
@@ -726,8 +728,9 @@ nav {
     }
 
     .undermenu, .underundermenu {
-        display: block;
+        display: block; /* undermenuer er altid fremme i burgerbaren */
     }
+
     .menupunkt {
         display: block;
         width: 30%;
@@ -742,7 +745,6 @@ nav {
         float: left;
         left: 10rem;
         top: 0;
-        display: block;
     }
     
     .undermenupunkt p, .undermenupunkt a {
@@ -769,8 +771,7 @@ nav {
         padding: 1px 0 1px 2rem;
     }
 
-    /* BURGERMENU KOMMER FREM VED KLIK */
-    #check:checked ~ #menu {
+    #check:checked ~ #menu { /* burgermenu kommer frem ved klik på ikon */
         left: 0;
     }
 
@@ -783,7 +784,8 @@ nav {
     }
 }
 
-/* Breakpoint til tablet */
+
+/* Breakpoint til mobil */
 @media (max-width: 767px) {
     nav {
         height: 5rem;
@@ -811,7 +813,7 @@ nav {
 
 /* Breakpoint til tablet */ 
 @media (min-width: 768px) {
-    /* Banner */
+    /* BANNER */
     .sb {
         scale: 2;
     }
@@ -820,7 +822,7 @@ nav {
         scale: 2;
     }
     
-    /* Datoer */
+    /* UGERÆKKE */
     .datof {
         height: auto;
         width: auto;
@@ -839,7 +841,7 @@ nav {
         font-size: 1.1rem;
     }
     
-    /* Program */
+    /* PROGRAM */
     .prop {
         width: 30.6%;
     }
@@ -852,17 +854,18 @@ nav {
     }
 }
 
+
 /* Breakpoint til laptop */ 
 @media (min-width: 1024px) {
     .program {
       margin: 11rem 10% 0;
     }
   
-  /* Datoer */
+    /* UGERÆKKE */
     .datof {
     height: auto;
     width: 100%;
-    gap: 4%;
+    gap: 4%; /* mellemrum imellem hver dag */
     }
 
     .box-rod, .box-sort {
@@ -877,9 +880,7 @@ nav {
         font-size: 1.2rem;
     }
   
-  /* Program */
-
-  
+    /* PROGRAM*/
     .prop {
     width: 22%;
     }
@@ -893,7 +894,6 @@ nav {
     }
 }
 
-
 /********************************************************** MEDIA TIL FILM ***********************************************************/
 
 /* Breakpoint til tablet */ 
@@ -904,7 +904,7 @@ nav {
         width: 76%;
     }
     
-    /* styling af section 1 (filmplakat, overskrift, book billet, tider) */
+    /* PLAKAT + TIDER */
     .film-box1 {
         display: flex;
         flex-direction: row;
@@ -912,6 +912,7 @@ nav {
         width: 100%;
         align-items: flex-start;
     }
+
     .film-intro {
         width: 45%;
     }
@@ -948,8 +949,7 @@ nav {
         font-size: 1.4rem;
     }
     
-
-    /* styling af section 2 (grå boks m tekniske filmoplysninger) */
+    /* TEKNISKE OPLYSNINGER */
     .film-box2 {
         padding: 30px;
     }
@@ -958,12 +958,11 @@ nav {
         margin: 2px 0;
     }
     
-    /* styling af section 3 (Filmbeskrivelse) */
-    
+    /* FILMBESKRIVELSE */
     .film-box3 h2, .film-box4 h2, .film-box5 h2 {
         font-size: 1.2rem;
         font-weight: 600;
-        margin-top: 1rem;
+        margin: 2.5rem 0 0.5rem;
     }
     
     .film-box3 p {
@@ -971,28 +970,28 @@ nav {
         margin: 1rem 0;
     }
     
-
-
-    /* styling af section 4 (trailer) */
-    
+    /* TRAILER */
     .film-box4 iframe {
         width: 100%; 
         height: 50vh;
     }
     
-    
-    /* styling af section 5 (anmeldelser) */
+    /* ANMELDELSER */
     .film-box5 img {
         height: 3rem;
     }
-
-
+    
+    .film-box5 h3, .film-box5 p {
+        font-size: 1rem;
+    }
+    
+    /* læs mere knap + læs mindre knapper */
     .film-box-laesmere3, .film-box-laesmere5 {
-        display: block;
+        display: block; /* Viser "mere tekst" ved anmeldelser */
     }
     
     .film-box3 label, .film-box-laesmere3 .film-laesmere5-knap, .film-box5 label, .film-box-laesmere5 .film-laesmere5-knap {
-        display: none;
+        display: none; /* Fjerne læs mere/vis mindre kanpperne til "mere tekst" ved anmeldelser */
     }
     
     .anmeldelse-link {
@@ -1010,80 +1009,74 @@ nav {
 } 
     
     
-    /* Breakpoint til laptop */ 
-    @media (min-width: 1024px) {
-        .film {
-            margin: 11rem 15% 1.5rem;
-            width: 70%;
-        }
+/* Breakpoint til laptop */ 
+@media (min-width: 1024px) {
+    .film {
+        margin: 11rem 15% 1.5rem;
+        width: 70%;
+    }
         
-        /* styling af section 1 (filmplakat, overskrift, book billet, tider) */
-        .film-box1 {
-            display: flex;
-            flex-direction: row;
-            margin: 0;
-            width: 100%;
-            align-items: flex-start;
-        }
-        .film-intro {
-            width: 35%;
-        }
-    
-        .film-box1 .img {
-            width: 65%;
-        }
-    
+    /* PLAKAT + TIDER */
+    .film-box1 {
+        display: flex;
+        flex-direction: row;
+        margin: 0;
+        width: 100%;
+        align-items: flex-start;
+    }
         
-        .film-box1 h1 {
-            font-size: 2.5rem;
-            margin: 0 20px 10px;
-        }
+    .film-intro {
+        width: 35%;
+    }
     
-        .film-box1 p {
-            font-size: 1.7rem;
-            margin: 0 20px;
-        }
+    .film-box1 .img {
+        width: 65%;
+    }
     
-        .film-box1_1 {
-            margin: 0 20px;
-        }
+    .film-box1 h1 {
+        font-size: 2.5rem;
+        margin: 0 20px 10px;
+    }
     
-        .film-box1 a {
-            margin: 0.75rem 2rem 0.75rem 0;
-            font-size: 1.55rem;
-        }
+    .film-box1 p {
+        font-size: 1.7rem;
+        margin: 0 20px;
+    }
+    
+    .film-box1_1 {
+        margin: 0 20px;
+    }
+    
+    .film-box1 a {
+        margin: 0.75rem 2rem 0.75rem 0;
+        font-size: 1.55rem;
+    }
         
+    /* TEKNISKE OPLYSNINGER */
+    .film-box2 {
+        font-size: 1.5rem;
+    }
     
-        /* styling af section 2 (grå boks m tekniske filmoplysninger) */
-        .film-box2 {
-            font-size: 1.5rem;
-        }
+    /* FILMBESKRIVELSE */
+    .film-box3 h2, .film-box4 h2, .film-box5 h2 {
+        font-size: 1rem;
+    }
+        
+    .film-box3 p {
+        font-size: 1rem;
+        margin: 0.5rem 0;
+    }
+        
+    /* TRAILER */        
+    .film-box4 iframe {
+        height: 65vh;
+    }
     
-        
-        /* styling af section 3 (Filmbeskrivelse) */
-        
-        .film-box3 h2, .film-box4 h2, .film-box5 h2 {
-            font-size: 1.7rem;
-        }
-        
-        .film-box3 p {
-            font-size: 1rem;
-            margin: 1rem 0;
-        }
-        
-    
-    
-        /* styling af section 4 (trailer) */
-        
-        .film-box4 iframe {
-            height: 65vh;
-        }
-    
-        
-        .knap {
-            font-size: 1.5rem;
-        }
-    } 
+    /* læs mere knap + læs mindre knapper */
+    .knap {
+        font-size: 1.5rem;
+    }
+} 
 
 /********************************************************** MEDIA TIL KLUBBER ********************************************************/
 
@@ -1094,13 +1087,14 @@ nav {
         margin: 6rem 12% 1.5rem;
         width: 76%;
     }
-
+    
+    /* OVERKSRIFT + BESKRIVELSE */
     .klubber p {
         margin: 10px 0 5px;
         font-size: 1.2rem;
     }
 
-    /* Styling af indhold*/
+    /* KLUBBERNE */
     .klubber .klubber-box {
         margin: 3rem 0;
     }
@@ -1112,19 +1106,16 @@ nav {
         flex-direction: column;
     }
 
-    /* Styling af underoverskrifter */
     .klubber .klubber-box h2 {
         font-size: 2.3rem;
         margin: 0;
     }
 
-    /* Styling af tekst */
     .klubber .klubber-box p {
         margin: 10px 0;
         font-size: 1rem;
     }
 
-    /* Styling af billeder */
     .klubber .klubber-box .img {
         width: 40%;
         align-items: center; 
@@ -1140,13 +1131,12 @@ nav {
     }
 
     .klubber-img-mobil {
-        display: none;
+        display: none; /* Rektangluært billede vises */
     }
 
     .klubber-img-tablet {
-        display: block;
+        display: block; /* Kvadratisk billede vises */
     }
-
 }
 
 /* Breakpoint til laptop */
@@ -1156,6 +1146,7 @@ nav {
         width: 76%;
     }
 
+    /* OVERKSRIFT + BESKRIVELSE */
     .klubber p {
         font-size: 1rem;
     }
@@ -1164,17 +1155,14 @@ nav {
         width: 65%;
     }
 
-    /* Styling af billeder */
     .klubber .klubber-box .img {
         width: 35%;
     }
 
-    /* Styling af underoverskrifter */
     .klubber .klubber-box h2 {
         font-size: 1.9rem;
     }
 
-    /* Styling af tekst */
     .klubber .klubber-box p {
         font-size: 1rem;
     }
@@ -1191,6 +1179,7 @@ nav {
 
 
 /*********************************************************** MEDIA TIL ERROR *********************************************************/
+
 /* Breakpoint til tablet */
 @media (min-width: 768px) {
 
