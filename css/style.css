@@ -159,11 +159,16 @@ nav {
 .banner h1 {
     font-weight: normal;
     font-size: 200%;
+    color: white;
 }
   
 .banner .tekstb i {
     color: black;
     font-size: 200%;
+}
+
+.fa-angle-left:hover, .fa-angle-right:hover {
+    opacity: 0.5;
 }
   
 /* UGERÆKKE */
