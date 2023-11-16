@@ -1,243 +1,310 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="da">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Øst for Paradis • Program</title>
+    <title>Øst for Paradis • StudentBio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/studentbio.css">
-    <link rel="icon" href="">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/fav-icon.svg">
 
-    <!-- Ekstra Meta
     <meta name="geo.region" content="DK-82">
     <meta name="geo.placename" content="Midtjylland">
     <meta name="geo.position" content="56.223769;10.123814">
     <meta name="ICBM" content="56.223769, 10.123814">
     <meta name="author" content="Andrea Skadhede, Karoline Thomine Eriksen, Mia Smaakjær Lauridsen, Regitze Schantz Johnsson">
-    <meta name="description" content="">
-    -->
+    <meta name="description" content="Er du studerende og elsker at gå i biografen? Så læs mere her om Øst for Paradis' event StudentBio.">
 
 </head>
 
 
-
-<!--BODY START-->
 <body>
+    <header>
+        <!-- navbar start -->
+        <nav>
+            <!-- IKONER -->
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn icon">
+                <i class="fa fa-bars"></i>
+            </label>
+            <i class="fa fa-magnifying-glass icon"></i>
 
-<!--Overskrift + beskrivelse af Studentbio-->
-<main>
+            <!-- LOGO -->
+            <a href="index.html">
+                <img id="navlogo" src="img/logo/logo_done.webp" alt="Logo">
+            </a>
 
-<div class="beskrivelse">
-    <h1 class="student-h1">STUDENTBIO</h1>
-    <br>
-    <p>Er du studerende? Kan du lide kunstfilm eller bare de store nye? Så kan du glæde dig til vores ‘Studentbio’-dage. Vi lægger en måned frem hver gang, så du har mulighed for at planlægge dit besøg efter dine behov. 
-    <br>
-    <br>
-        Vi har samlet en masse gode film og fundet den billige pris frem - når du har et studiekort. Billetten kommer kun til at koste dig 60kr – det bliver ikke billigere. Tag dine studiekammerater under armen, og skynd jer at bestille en plads inden der bliver udsolgt. 
-    <br>
-    <br>
-         Tjek vores nedenstående program, og find de film der går. </p>
+            <!-- SEARCH FIELD -->
+            
+            <input class="search" type="text" placeholder=" ">
 
-         <br>
-         <br>
+            <ul id="menu">
+                <!-- PROGRAM -->
+                <li class="menupunkt menupunkt1"><a href="index.html">Program</a>
+                    <ul class="undermenu undermenu1">
+                        <!-- aktuelle film -->
+                        <li class="undermenupunkt" id="undermenupunkt1"><p>Aktuelle film</p>
+                            <ul class="underundermenu" id="underundermenu1">
+                                <li class="underundermenupunkt"><a href="error.html">Barbie</a></li>
+                                <li class="underundermenupunkt"><a href="film.html">Bastarden</a></li>
+                                <li class="underundermenupunkt"><a href="error.html">Forsvundet i Natten</a></li>
+                                <li class="underundermenupunkt"><a href="error.html">Kald mig Lucía</a></li>
+                                <li class="underundermenupunkt"><a href="error.html">Killers of the Flower Moon</a></li>
+                                <li class="underundermenupunkt"><a href="error.html">Lærerværelset</a></li>
+                                <li class="underundermenupunkt"><a href="error.html">Madeleines Paris</a></li>
+                                <li class="underundermenupunkt"><a href="error.html">Oppenheimer</a></li>
+                                <li class="underundermenupunkt"><a href="error.html">Songs of Earth</a></li>
+                                <li class="underundermenupunkt"><a href="error.html">The Miracle Club</a></li>
+                            </ul>
+                        </li>
+                        <!-- kommende film -->
+                        <li class="undermenupunkt"><p>Kommende film</p></li>
+                    </ul>
+                </li>
 
-    <p>Billetpris: 100 kr. 
-        <br>
-        <br>
-       Billetpris m. studiekort: 60 kr.
-    </p>
+                <!-- EVENTS -->
+                <li class="menupunkt menupunkt2"><p>Events</p>
+                    <ul class="undermenu undermenu2">
+                        <li class="undermenupunkt"><a href="error.html">BabyBio</a></li>
+                        <li class="undermenupunkt"><a href="studentbio.html">StudentBio</a></li>
+                        <li class="undermenupunkt"><a href="error.html">SeniorBio</a></li>
+                        <li class="undermenupunkt"><a href="error.html">Franske film mandage</a></li>
+                        <li class="undermenupunkt"><a href="error.html">Cinematek tirsdag</a></li>
+                        <li class="undermenupunkt"><a href="error.html">Engelnes aftener</a></li>
+                    </ul>
+                </li>
 
-</div>
+                <!-- KLUBBER -->
+                <li class="menupunkt menupunkt3"><a href="klubber.html">Klubber</a></li>
 
-<!--Sorte bokse med dato og ugedag i-->
-<div class="boxes1">
-     <div class="dato-tidspunkt-student">
-        <p class="dato">23/11</p>
-        <p class="ugedag">Torsdag</p>
-    </div>
 
-    <div class="dato-tidspunkt-student">
-        <p class="dato"> 
-            28/11
-        </p>
-        <p class="ugedag">
-           Tirsdag
-        </p>
-    </div>
+                <!-- OM -->
+                <li class="menupunkt menupunkt4"><a href="error.html">Om Øst for Paradis</a>
+                    <ul class="undermenu undermenu4">
+                        <!-- biografens historie -->
+                        <li class="undermenupunkt undermenupunkt4-1"><a href="error.html">Biografens historie</a>
+                            <ul class="underundermenu underundermenu4-1">
+                                <li class="underundermenupunkt"><a href="error.html">Ombygning</a></li>
+                            </ul>
+                        </li>
 
-    <div class="dato-tidspunkt-student">
-        <p class="dato">
-            6/12
-        </p>
-        <p class="ugedag">
-           Onsdag
-        </p>
-    </div>
+                        <!-- generel information -->
+                        <li class="undermenupunkt undermenupunkt4-2"><p>Generel information</p>
+                            <ul class="underundermenu underundermenu4-2">
+                                <li class="underundermenupunkt"><a href="error.html">Parkering</a></li>
+                                <li class="underundermenupunkt"><a href="error.html">Faciliteter</a></li>
+                                <li class="underundermenupunkt"><a href="error.html">Muligheder for handicappede</a></li>
+                                <li class="underundermenupunkt"><a href="error.html">Addresse</a></li>
+                                <li class="underundermenupunkt"><a href="error.html">Billetpriser og rabatter</a></li>
+                                <li class="underundermenupunkt"><a href="error.html">Betalingsmuligheder</a></li>
+                                <li class="underundermenupunkt"><a href="error.html">Snacks og drikkervarer</a></li>
+                            </ul>
+                        </li>
+                        <li class="undermenupunkt"><a href="error.html">Job i Øst for Paradis</a></li>
+                        <li class="undermenupunkt"><a href="error.html">Kontakt</a></li>
+                        <li class="undermenupunkt"><a href="error.html">Distribution</a></li>
+                        <li class="undermenupunkt"><a href="error.html">Paradisets engle</a></li>
+                    </ul>
+                </li>
 
-    <div class="dato-tidspunkt-student">
-        <p class="dato">
-            15/12
-        </p>
-        <p class="ugedag">
-           Fredag
-        </p>
-    </div>
+                <!-- MIN SIDE -->
+                <li class="menupunkt menupunkt5"><a href="error.html">Min side</a>
+                    <ul class="undermenu undermenu5">
+                        <!-- login -->
+                        <li class="undermenupunkt"><a href="error.html">Login</a>
+                            <ul class="underundermenu">
+                                <li class="underundermenupunkt"><a href="error.html">Mine fordele</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
 
-    <div class="dato-tidspunkt-student">
-        <p class="dato">
-            21/12
-        </p>
+                <!-- MERE -->
+                <li class="menupunkt menupunkt6"><a href="error.html">Mere</a>
+                    <ul class="undermenu undermenu6">
+                        <!-- lej en sal -->
+                        <li class="undermenupunkt undermenupunkt6-1"><p>Lej en sal</p>
+                            <ul class="underundermenu underundermenu6-1">
+                                <li class="underundermenupunkt"><a href="error.html">Fødselsdag i Paradis</a></li>
+                                <li class="underundermenupunkt"><a href="error.html">Skoleforestilling</a></li>
+                                <li class="underundermenupunkt"><a href="error.html">En romatisk aften</a></li>
+                            </ul>
+                        </li>
+
+                        <!-- shop -->
+                        <li class="undermenupunkt undermenupunkt6-2"><p>Shop</p>
+                            <ul class="underundermenu underundermenu6-2">
+                                <li class="underundermenupunkt"><a href="error.html">Gavekort</a></li>
+                                <li class="underundermenupunkt"><a href="error.html">Merchandise</a></li>
+                                <li class="underundermenupunkt"><a href="error.html">DVD'er</a></li>
+                                <li class="underundermenupunkt"><a href="error.html">Plakater</a></li>
+                            </ul>
+                        </li>
+
+                        <!-- samarbejdspartnere -->
+                        <li class="undermenupunkt undermenupunkt6-3"><p>Samarbejdspartnere</p>
+                            <ul class="underundermenu underundermenu6-3">
+                                <li class="underundermenupunkt"><a href="error.html">Cinemateket</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="undermenupunkt"><a href="error.html">Reklame på det store lærred</a></li>
+                        <li class="undermenupunkt"><a href="error.html">Nyhedsbrev</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+
+
+        </nav>
+        <!-- navbar slut -->
+    </header>
+
+    <main class="program">
+        <!-- Beskrivelse start -->
+        <div class="beskrivelse">
+            <h1 class="studentbio-h1">StudentBio</h1>
+            <p class="beskrivelse2">Er du studerende? Kan du lide kunstfilm eller bare de store nye? Så kan du glæde dig til vores 'Studentbio'-dage. Vi lægger en måned frem hver gang, så du har mulighed for at planlægge dit besøg efter dine behov.</p>
+            <p class="beskrivelse2">Vi har samlet en masse gode film og fundet den billige pris frem - når du har et studiekort. Billetten kommer kun til at koste dig 60kr – det bliver ikke billigere. Tag dine studiekammerat under armen, og skynd jer at bestille en plads inden der bliver udsolgt. </p>
+            <p class="beskrivelse2"> Tjek vores nedenstående program, og find de film der går.</p>
+        </div>
         
-        <p class="ugedag"> 
-            Torsdag
-        </p>
-    </div>
-
-    <div class="dato-tidspunkt-student">
-        <p class="dato">
-            2/1
-        </p>
-        <p class="ugedag">
-           Tirsdag
-        </p>
-    </div>
-
-    <div class="dato-tidspunkt-student">
-        <p class="dato">
-            10/1
-        </p>
-        <p class="ugedag">
-           Fredag
-        </p>
-    </div>
-</div>
-
-
-
-
-
-
-
-
-<div class="alle-posters">
-    <div class="film-posters">
-        <img class="images" src="img/movieposter/bastarden-movieposter.jpg" alt="Bastarden filmplakat">
-        <p class="titel">Bastarden</p>
-        <div class="tid1">
-            <a  class="sort" href="#">23/11</a>
-            <a  class="rød"  href="#">16:30</a>
+        <!-- Datoer start -->
+        <div class="datof">
+            <div class="box-sort">
+                <p class="p1">23/11</p>
+                <p class="p2">Torsdag</p>
+            </div>
+            
+            <div class="box-sort">
+                <p class="p1">28/11</p>
+                <p class="p2">Tirsdag</p>
+            </div>
+            <div class="box-sort">
+                <p class="p1">06/12</p>
+                <p class="p2">Onsdag</p>
+            </div>
+            <div class="box-sort">
+                <p class="p1">15/12</p>
+                <p class="p2">Fredag</p>
+            </div>
+            <div class="box-sort">
+                <p class="p1">21/12</p>
+                <p class="p2">Tirsdag</p>
+            </div>
+            <div class="box-sort">
+                <p class="p1">02/01</p>
+                <p class="p2">Onsdag</p>
+            </div>
+            <div class="box-sort">
+                <p class="p1">10/01</p>
+                <p class="p2">Torsdag</p>
+            </div>
         </div>
-    </div>
 
-    <div class="film-posters">
-        <img class="images" src="img/movieposter/bastarden-movieposter.jpg" alt="Bastarden filmplakat">
-        <p class="titel">Bastarden</p>
-        <div class="tid1">
-            <a  class="sort" href="#">23/11</a>
-            <a  class="rød"  href="#">16:30</a>
+
+        <!-- Film program start -->
+        <div class="programp">
+            <div class="prop">
+                <a class="linkbas" href="film.html"><img class="posterp" src="img/movieposter/bastarden-movieposter.jpg" alt="Bastarden"></a>
+                <a class="titleb" href="film.html">Bastarden</a>
+                <div class="tider">
+                    <a class="sort2" href="film.html">23/11</a>
+                    <a href="film.html">14:15</a>
+                </div>
+            </div>
         </div>
-    </div>
-
-    <div class="film-posters">
-        <img class="images" src="img/movieposter/bastarden-movieposter.jpg" alt="Bastarden filmplakat">
-        <p class="titel">Bastarden</p>
-        <div class="tid1">
-            <a  class="sort" href="#">23/11</a>
-            <a  class="rød"  href="#">16:30</a>
+        
+        <div class="prop">
+            <img class="posterp" src="img/movieposter/killers-of-the-flower-moon-movieposter.jpg" alt="Killers of the Flower Moon">
+            <p class="mobilp">Killers of the Fl...</p>
+            <p class="tabletp">Killers of the Flower Moon</p>
+            <div class="tider">
+                <div class="sort2">28/11</div>
+                <div>13:00</div>
+            </div>
         </div>
-    </div>
 
-    <div class="film-posters">
-        <img class="images" src="img/movieposter/bastarden-movieposter.jpg" alt="Bastarden filmplakat">
-        <p class="titel">Bastarden</p>
-        <div class="tid1">
-            <a  class="sort" href="#">23/11</a>
-            <a  class="rød"  href="#">16:30</a>
+        <div class="prop">
+            <img class="posterp" src="img/movieposter/madeleines-paris-movieposter.jpg" alt="Madeleines Paris">
+            <p class="mobilp">Madeleines P...</p>
+            <p class="tabletp">Madeleines Paris</p>
+            <div class="tider">
+                <div class="sort2">6/12</div>
+                <div>18:00</div>
+            </div>
         </div>
-    </div>
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-  
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        <div class="prop">
+            <img class="posterp" src="img/movieposter/laerervaerelset-movieposter.jpg" alt="Lærerværelset">
+            <p>Lærerværelset</p>
+            <div class="tider">
+                <div class="sort2">15/12</div>
+                <div>15:30</div>
+            </div>
+        </div>
+        <div class="prop">
+            <img class="posterp" src="img/movieposter/barbie-movieposter.jpg" alt="Barbie">
+            <p class="mobilp">Barbie</p>
+            <p class="tabletp">Barbie</p>
+            <div class="tider">
+                <div class="sort2">21/12</div>
+                <div>16:00</div>
+            </div>
+        </div>
+        <div class="prop">
+            <img class="posterp" src="img/movieposter/oppenheimer-movieposter.jpg" alt="Oppenheimer">
+            <p class="mobilp">Oppenheimer</p>
+            <p class="tabletp">Oppenheimer</p>
+            <div class="tider">
+                <div class="sort2">2/1</div>
+                <div>19:15</div>
+            </div>
+        </div>
+        <div class="prop">
+            <img class="posterp" src="img/movieposter/the-miracle-club-movieposter.jpg" alt="The Miracle Club">
+            <p class="mobilp">The Miracle C...</p>
+            <p class="tabletp">The Miracle Club</p>
+            <div class="tider">
+                <div class="sort2">10/01</div>
+                <div>14:10</div>
+            </div>
+        </div>
+    </main>
+
+
+    <!-- FOOTER START -->
+    <footer class="footer">
+        <div class="topf">
+            <ul class="aabningstiderf">
+                <li class="titelf">Åbningstider</li>
+                <li>Mandag - Fredag <br class="brf1"> 12:00-22:00</li>
+                <li>Lørdag - Søndag <br class="brf1"> 11:30-22:00</li>
+            </ul>
+            
+            <div class="logof">
+                <a href="index.html"><img src="img/logo/logo_done.webp" alt="Øst for Paradis logo"></a>
+                <div class="socialf">
+                    <a href="https://www.facebook.com/oestforparadisbio/"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/oestforparadis/"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+
+            <ul class="linksf">
+                <li><a href="error.html">Persondata</a></li>
+                <li><a href="error.html">Cookies</a></li>
+                <li><a href="error.html">Vilkår</a></li>
+            </ul>
+        </div>
+
+        <ul class="bundf">
+            <li>+45 86 19 81 22</li>
+            <li id="bundfli2">Paradisgade 9c, <br class="brf2"> 8000 Aarhus C</li>
+            <li id="bundfli3">kontor@paradisbio.dk</li>
+        </ul>
+    </footer>
+    <!-- FOOTER SLUT -->
+    </body>
+</html>
