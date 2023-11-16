@@ -439,6 +439,10 @@ nav {
     margin: 10px 0 5px;
 }
 
+.billetpris {
+    padding: 0.2rem 0;
+}
+
 .tider .sort2{
     background-color: black;
 }
