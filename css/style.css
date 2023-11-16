@@ -6,7 +6,6 @@
     box-sizing: border-box;
 }
 
-/* styling af body */
 body {
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
@@ -19,7 +18,6 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 300;
 }
 
-
 /*************************************************************************************************************************************/
 /*************************************************************** NAVBAR **************************************************************/
 /*************************************************************************************************************************************/
@@ -27,11 +25,11 @@ h1, h2, h3, h4, h5, h6 {
 nav {
     background-color: black;
     height: 8.5rem;
-    position: fixed;
+    position: fixed; /* navbar sidder fast i toppen af vinduet */
     top: 0;
     width: 100%;
     display: inline-block;
-    z-index: 5;
+    z-index: 5; /* sikre at navbaren ikke bliver dækket af andre ting */
 }
 
 /* LOGO */
@@ -41,9 +39,9 @@ nav {
     margin: 1.5rem 1.5rem;
 }
 
-/* SØGEFELT KOMMER FREM + STYLING */
+/* SØGEFELT */
 .search {
-    position: absolute;
+    position: absolute; /* søgefeltet sidder fast på sin plads i vinduet */
     display: block;
     right: 2rem;
     line-height: 1rem;
@@ -63,20 +61,19 @@ nav {
     float: right;
     right: 2.5rem;
     top: 3rem;
-    cursor: pointer;
+    cursor: pointer; /* ændrer musen til en finger */
     display: block;
     line-height: 1rem;
     position: relative;
-    z-index: 3;
+    z-index: 3; /* får loppen til at sidde oven på søgefeltet */
 }
 
 .fa-bars {
     display: none;
 }
 
-
-/* NAVBAR */
-#check {
+/* MENU */
+ #check { /*input-tag, der gør det muligt, at have en burgermenu */
     display: none;
 }
 
@@ -88,6 +85,7 @@ nav {
     background-color: black;
 }
 
+/* 1. LAG I MENUEN */
 .menupunkt {
     display: inline-block;
     width: 14.5%;
@@ -99,10 +97,10 @@ nav {
     padding: 0 0 0 5px;
 }
 
+/* 2. LAG I MENUEN */
 .undermenu, .underundermenu {
     display: none;
 }
-
 
 .undermenupunkt p, .undermenupunkt a {
     display: block;
@@ -113,7 +111,7 @@ nav {
     padding: 5px;
 }
 
-
+/* 3. LAG I MENUEN */
 .underundermenu {
     float: left;
     left: 10rem;
@@ -137,7 +135,7 @@ nav {
     margin: 7rem 5% 0;
 }
   
-/* Banner */
+/* BANNER */
 .banner {
     position: relative;
     display: flex;
@@ -149,7 +147,7 @@ nav {
 .trappe {
     width: 100%;
 }
-  
+
 .tekstb {
     position: absolute;
     display: flex;
@@ -168,13 +166,12 @@ nav {
     font-size: 200%;
 }
   
-/* Dato */
+/* UGERÆKKE */
 .datof {
     display: block;
     width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
     text-align: center;
     margin: 5% 0;
     gap: 2%;
@@ -202,22 +199,21 @@ nav {
     background-color: #982216;
 }
   
-/* Program */
+/* PROGRAM*/
 .programp {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: flex-start;
     align-items: flex-start;
     width: 100%;
-    gap: 0 4%;
+    gap: 0 4%; /* mellemrum imellem hver film */
 }
   
 .posterp {
     width: 100%;
-    height: auto;
 }
   
+
 .linkbas {
     display: flex;
     justify-content: center;
@@ -229,10 +225,8 @@ nav {
   
 .tider {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-items: center;
     width: 100%;
 }
   
@@ -252,10 +246,7 @@ nav {
   
 .prop {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
     width: 48%;
     margin: 0 0 5%;
 }
@@ -294,12 +285,11 @@ nav {
     width: 80%;
 }
 
-/* styling af section 1 (filmplakat, overskrift, book billet, tider) */
+/* PLAKAT + TIDER */
 .film-box1 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     text-align: center;
     width: 70%;
     margin: 0 15%;
@@ -333,7 +323,7 @@ nav {
 }
 
 
-/* styling af section 2 (grå boks m tekniske filmoplysninger) */
+/* TEKNISKE OPLYSNINGER */
 .film-box2 {
     display: inline-block;
     width: 100%;
@@ -348,7 +338,7 @@ nav {
     margin: 2px 0;
 }
 
-/* styling af section 3 (Filmbeskrivelse) */
+/* FILMBESKRIVELSE */
 .film-box3 {
     margin: 1rem 0;
 }
@@ -363,7 +353,7 @@ nav {
     margin: 1rem 0;
 }
 
-/* styling af section 4 (trailer) */
+/* TRAILER */
 .film-box4 {
     margin: 1rem 0;
     display: flex;
@@ -374,11 +364,9 @@ nav {
     width: 100%; 
     height: 100%;
     border: 0;
-    margin: 0;
 }
 
-
-/* styling af section 5 (anmeldelser) */
+/* ANMELDELSER */
 .film-box5 {
     margin: 1rem 0;
 }
@@ -402,24 +390,18 @@ nav {
 }
 
 #film-laesmere2:checked ~ .film-box-laesmere2, #film-laesmere3:checked ~ .film-box-laesmere3, #film-laesmere5:checked ~ .film-box-laesmere5 {
-    display: block; /* Vis mere tekst, når man trykker på teksten/checkboxen */
+    display: block; /* Vis mere tekst, når man trykker på læs mere */
 }
 
 #film-laesmere2:checked ~ .film-laesmere2-knap, #film-laesmere3:checked ~ .film-laesmere3-knap, #film-laesmere5:checked ~ .film-laesmere5-knap {
-    display: none;
+    display: none; /* Fjerne mere tekst, når man trykker vis mindre */
 }
 
 .anmeldelse-link {
     display: none;
 }
 
-.knap {
-    display: block;
-    padding: 10px 0 0;
-    font-size: 1rem;
-}
-
-.knapf {
+.knap, .knapf {
     display: block;
     padding: 10px 0 0;
     font-size: 1rem;
@@ -981,6 +963,7 @@ nav {
     .film-box3 h2, .film-box4 h2, .film-box5 h2 {
         font-size: 1.2rem;
         font-weight: 600;
+        margin-top: 1rem;
     }
     
     .film-box3 p {
