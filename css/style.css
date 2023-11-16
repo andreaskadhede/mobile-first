@@ -70,8 +70,6 @@ nav {
     z-index: 3;
 }
 
-
-
 .fa-bars {
     display: none;
 }
@@ -254,7 +252,7 @@ nav {
   
 .prop {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
@@ -438,11 +436,11 @@ nav {
 }
 
 .beskrivelse {
-    margin: 10px 5% 5px;
+    margin: 10px 4% 5px;
     font-size: 0.9rem;
 }
   
-  .beskrivelse2{
+.beskrivelse2{
     margin: 10px 0 5px;
 }
 
