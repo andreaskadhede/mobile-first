@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="da">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,156 +8,164 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="nav-film-klubber-error-footer.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="">
 
-    <!-- Ekstra Meta
     <meta name="geo.region" content="DK-82">
     <meta name="geo.placename" content="Midtjylland">
     <meta name="geo.position" content="56.223769;10.123814">
     <meta name="ICBM" content="56.223769, 10.123814">
     <meta name="author" content="Andrea Skadhede, Karoline Thomine Eriksen, Mia Smaakjær Lauridsen, Regitze Schantz Johnsson">
-    <meta name="description" content="">
-    -->
+    <meta name="description" content="Læs om filmen Bastarden som kører her i Øst for Paradis. Læs både tekniske informationer, beskrivelse og anmeldeser." >
 
 </head>
+
 <body>
     <header>
-        <!-- NAVBAR START -->
+        <!-- navbar start -->
         <nav>
-            <!-- ikoner -->
-            <input type="checkbox" id="check" />
+            <!-- IKONER -->
+            <input type="checkbox" id="check">
             <label for="check" class="checkbtn icon">
                 <i class="fa fa-bars"></i>
             </label>
             <i class="fa fa-magnifying-glass icon"></i>
-            
 
-            <!-- logo -->
+            <!-- LOGO -->
             <a href="index.html">
-                <img id="navlogo" src="img/logo/logo_done.webp" alt="Logo" />
+                <img id="navlogo" src="img/logo/logo_done.webp" alt="Logo">
             </a>
 
-            <!-- søge felt -->
+            <!-- SEARCH FIELD -->
+            
             <input class="search" type="text" placeholder=" ">
 
-            <!-- dropdown menu -->
-            <div class="dropdown-menu">
+            <ul id="menu">
+                <!-- PROGRAM -->
+                <li class="menupunkt menupunkt1"><a href="index.html">Program</a>
+                    <ul class="undermenu undermenu1">
+                        <!-- aktuelle film -->
+                        <li class="undermenupunkt" id="undermenupunkt1"><p>Aktuelle film</p>
+                            <ul class="underundermenu" id="underundermenu1">
+                                <li class="underundermenupunkt"><a href="error.html">Barbie</a></li>
+                                <li class="underundermenupunkt"><a href="film.html">Bastarden</a></li>
+                                <li class="underundermenupunkt"><a href="error.html">Forsvundet i Natten</a></li>
+                                <li class="underundermenupunkt"><a href="error.html">Kald mig Lucía</a></li>
+                                <li class="underundermenupunkt"><a href="error.html">Killers of the Flower Moon</a></li>
+                                <li class="underundermenupunkt"><a href="error.html">Lærerværelset</a></li>
+                                <li class="underundermenupunkt"><a href="error.html">Madeleines Paris</a></li>
+                                <li class="underundermenupunkt"><a href="error.html">Oppenheimer</a></li>
+                                <li class="underundermenupunkt"><a href="error.html">Songs of Earth</a></li>
+                                <li class="underundermenupunkt"><a href="error.html">The Miracle Club</a></li>
+                            </ul>
+                        </li>
+                        <!-- kommende film -->
+                        <li class="undermenupunkt"><p>Kommende film</p></li>
+                    </ul>
+                </li>
 
-                <!-- program -->
-                <div class="dropdown">
-                <a class="dropbutton button" href="index.html">Program</a>
-                    <div class="dropdown-content">
-                        <div class="submenu">
-                            <a class="subbutton button buttonekstra" href="error.html">Aktuelle film</a>
-                            <div class="submenu-content">
-                                <a href="film.html">Bastarden</a>
-                            </div>
-                        </div>
-                        <a href="error.html">Kommende film</a>
-                    </div>
-                </div>
+                <!-- EVENTS -->
+                <li class="menupunkt menupunkt2"><p>Events</p>
+                    <ul class="undermenu undermenu2">
+                        <li class="undermenupunkt"><a href="error.html">BabyBio</a></li>
+                        <li class="undermenupunkt"><a href="studentbio.html">StudentBio</a></li>
+                        <li class="undermenupunkt"><a href="error.html">SeniorBio</a></li>
+                        <li class="undermenupunkt"><a href="error.html">Franske film mandage</a></li>
+                        <li class="undermenupunkt"><a href="error.html">Cinematek tirsdag</a></li>
+                        <li class="undermenupunkt"><a href="error.html">Engelnes aftener</a></li>
+                    </ul>
+                </li>
 
-                <!-- events -->
-                <div class="dropdown">
-                    <a class="dropbutton button" href="error.html">Events</a>
-                    <div class="dropdown-content">
-                        <a class="buttonekstra" href="error.html">BabyBio</a>
-                        <a href="studentbio.html">StudenBio</a>
-                        <a href="error.html">SeniorBio</a>
-                        <a href="error.html">Franske film mandage</a>
-                        <a href="error.html">Cinematek tirsdag</a>
-                        <a href="error.html">Englenes aftener</a>
-                    </div>
-                </div>
+                <!-- KLUBBER -->
+                <li class="menupunkt menupunkt3"><a href="klubber.html">Klubber</a></li>
 
-                <!-- klubber -->
-                <a class="dropbutton button" id="navspeciel" href="klubber.html">Klubber</a>
 
-                <!-- om øst for paradis -->
-                <div class="dropdown">
-                    <a class="dropbutton button" id="menuspeciel" href="error.html">Om Øst for Paradis</a>
-                    <div class="dropdown-content" id="dropdown-contentspeciel">
-                        <div class="submenu">
-                            <a class="subbutton button buttonekstra" href="error.html">Biografens historie</a>
-                            <div class="submenu-content">
-                                <a href="error.html">Ombygning</a>
-                            </div>
-                        </div>
-                        <div class="submenu">
-                            <a class="subbutton button" href="error.html">Generel information</a>
-                            <div class="submenu-content">
-                                <a href="error.html">Parkering</a>
-                                <a href="error.html">Faciliteter</a>
-                                <a class="specieltpunkt" href="error.html">Muligheder for handicappede</a>
-                                <a href="error.html">Addresse</a>
-                                <a class="specieltpunkt" href="error.html">Billetpriser og rabatter</a>
-                                <a href="error.html">Betalingsmuligheder</a>
-                                <a href="error.html">Snacks og drikkevarer</a>                    
-                            </div>
-                        </div>
-                        <a class="menuspeciel" href="error.html">Job i Øst for Paradis</a>
-                        <a href="error.html">Kontakt</a>
-                        <a href="error.html">Distribution</a>
-                        <a href="error.html">Paradisets engle</a>
-                    </div>
-                </div>
+                <!-- OM -->
+                <li class="menupunkt menupunkt4"><a href="error.html">Om Øst for Paradis</a>
+                    <ul class="undermenu undermenu4">
+                        <!-- biografens historie -->
+                        <li class="undermenupunkt undermenupunkt4-1"><a href="error.html">Biografens historie</a>
+                            <ul class="underundermenu underundermenu4-1">
+                                <li class="underundermenupunkt"><a href="error.html">Ombygning</a></li>
+                            </ul>
+                        </li>
 
-                <!-- min side -->
-                <div class="dropdown">
-                    <a class="dropbutton button" id="menuspeciel2" href="error.html">Min side</a>
-                    <div class="dropdown-content">
-                        <div class="submenu">
-                            <a class="subbutton button buttonekstra" href="error.html">Login</a>
-                            <div class="submenu-content">
-                                <a href="error.html">Mine fordele</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                        <!-- generel information -->
+                        <li class="undermenupunkt undermenupunkt4-2"><p>Generel information</p>
+                            <ul class="underundermenu underundermenu4-2">
+                                <li class="underundermenupunkt"><a href="error.html">Parkering</a></li>
+                                <li class="underundermenupunkt"><a href="error.html">Faciliteter</a></li>
+                                <li class="underundermenupunkt"><a href="error.html">Muligheder for handicappede</a></li>
+                                <li class="underundermenupunkt"><a href="error.html">Addresse</a></li>
+                                <li class="underundermenupunkt"><a href="error.html">Billetpriser og rabatter</a></li>
+                                <li class="underundermenupunkt"><a href="error.html">Betalingsmuligheder</a></li>
+                                <li class="underundermenupunkt"><a href="error.html">Snacks og drikkervarer</a></li>
+                            </ul>
+                        </li>
+                        <li class="undermenupunkt"><a href="error.html">Job i Øst for Paradis</a></li>
+                        <li class="undermenupunkt"><a href="error.html">Kontakt</a></li>
+                        <li class="undermenupunkt"><a href="error.html">Distribution</a></li>
+                        <li class="undermenupunkt"><a href="error.html">Paradisets engle</a></li>
+                    </ul>
+                </li>
 
-                <!-- mere -->
-                <div class="dropdown">
-                    <a class="dropbutton button" href="error.html">Mere</a>
-                    <div class="dropdown-content">
-                        <div class="submenu">
-                            <a class="subbutton button buttonekstra" href="error.html">Lej en sal</a>
-                            <div class="submenu-content">
-                                <a href="error.html">Fødseldag i Paradis</a>
-                                <a href="error.html">Skoleforestilling</a>
-                                <a href="error.html">En romantisk aften</a>
-                            </div>
-                        </div>
-                    
-                        <div class="submenu">
-                            <a class="subbutton button" href="error.html">Shop</a>
-                            <div class="submenu-menu">
-                                <a href="error.html">Gavekort</a>
-                                <a href="error.html">Merchandise</a>
-                                <a href="error.html">DVD'er</a>
-                                <a href="error.html">Plakater</a>
-                            </div>
-                        </div>
-                        <div class="submenu">
-                            <a class="subbutton button" href="error.html">Samarbejdspartnere</a>
-                            <div class="submenu-content">
-                                <a href="error.html">Cinemateket</a>
-                            </div>
-                        </div>
-                        <a class="specieltpunkt" href="error.html">Reklame på det store lærred</a>
-                        <a href="error.html">Nyhedsbrev</a>
-                    </div>
-                </div>
-            </div>
+                <!-- MIN SIDE -->
+                <li class="menupunkt menupunkt5"><a href="error.html">Min side</a>
+                    <ul class="undermenu undermenu5">
+                        <!-- login -->
+                        <li class="undermenupunkt"><a href="error.html">Login</a>
+                            <ul class="underundermenu">
+                                <li class="underundermenupunkt"><a href="error.html">Mine fordele</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+
+                <!-- MERE -->
+                <li class="menupunkt menupunkt6"><a href="error.html">Mere</a>
+                    <ul class="undermenu undermenu6">
+                        <!-- lej en sal -->
+                        <li class="undermenupunkt undermenupunkt6-1"><p>Lej en sal</p>
+                            <ul class="underundermenu underundermenu6-1">
+                                <li class="underundermenupunkt"><a href="error.html">Fødselsdag i Paradis</a></li>
+                                <li class="underundermenupunkt"><a href="error.html">Skoleforestilling</a></li>
+                                <li class="underundermenupunkt"><a href="error.html">En romatisk aften</a></li>
+                            </ul>
+                        </li>
+
+                        <!-- shop -->
+                        <li class="undermenupunkt undermenupunkt6-2"><p>Shop</p>
+                            <ul class="underundermenu underundermenu6-2">
+                                <li class="underundermenupunkt"><a href="error.html">Gavekort</a></li>
+                                <li class="underundermenupunkt"><a href="error.html">Merchandise</a></li>
+                                <li class="underundermenupunkt"><a href="error.html">DVD'er</a></li>
+                                <li class="underundermenupunkt"><a href="error.html">Plakater</a></li>
+                            </ul>
+                        </li>
+
+                        <!-- samarbejdspartnere -->
+                        <li class="undermenupunkt undermenupunkt6-3"><p>Samarbejdspartnere</p>
+                            <ul class="underundermenu underundermenu6-3">
+                                <li class="underundermenupunkt"><a href="error.html">Cinemateket</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="undermenupunkt"><a href="error.html">Reklame på det store lærred</a></li>
+                        <li class="undermenupunkt"><a href="error.html">Nyhedsbrev</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+
 
         </nav>
-        <!-- NAVBAR SLUT -->
+        <!-- navbar slut -->
     </header>
 
     <main class="film">
         <section class="film-box1">
             <div class="img">
-                <img src="/img/movieposter/bastarden-movieposter.jpg" alt="Bastarden">
+                <img src="img/movieposter/bastarden-movieposter.jpg" alt="Bastarden">
             </div>
                 <div class="film-intro">
                 <h1>Bastarden</h1>
@@ -229,7 +237,7 @@
         <section class="film-box5">
             <input type="checkbox" id="film-laesmere5">
             <h2>Anmeldelser</h2>
-            <img src="/img/stjerner.svg" alt="Stjerner">
+            <img src="img/stjerner.svg" alt="Stjerner">
             <div class="film-box-laesmere5">
                 <h3>Cinemateket</h3>
                 <p> "Bastarden" er en dansk westernfilm, skabt af instruktøren Nikolaj Arcel og med den prisbelønnede skuespiller Mads Mikkelsen i front. Cinemateket er fulde af begejstring for filmen. De fremhæver filmens unikke stil, den engagerende historie og de imponerende skuespilpræstationer. </p>
@@ -248,36 +256,36 @@
 
     </main>
 
- <!-- footer start -->
- <footer class="footer">
-    <div class="topf">
-        <ul class="aabningstiderf">
-            <li class="titelf">Åbningstider</li>
-            <li>Mandag - Fredag <br class="brf1"> 12:00-22:00</li>
-            <li>Lørdag - Søndag <br class="brf1"> 11:30-22:00</li>
-        </ul>
-        
-        <div class="logof">
-            <a href="error.html"><img src="img/logo/logo_done.webp" alt="Øst for Paradis logo"></a>
-            <div class="socialf">
-                <a href="https://www.facebook.com/oestforparadisbio/"><i class="fab fa-facebook"></i></a>
-                <a href="https://www.instagram.com/oestforparadis/"><i class="fab fa-instagram"></i></a>
+    <!-- FOOTER START -->
+    <footer class="footer">
+        <div class="topf">
+            <ul class="aabningstiderf">
+                <li class="titelf">Åbningstider</li>
+                <li>Mandag - Fredag <br class="brf1"> 12:00-22:00</li>
+                <li>Lørdag - Søndag <br class="brf1"> 11:30-22:00</li>
+            </ul>
+            
+            <div class="logof">
+                <a href="index.html"><img src="img/logo/logo_done.webp" alt="Øst for Paradis logo"></a>
+                <div class="socialf">
+                    <a href="https://www.facebook.com/oestforparadisbio/"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/oestforparadis/"><i class="fab fa-instagram"></i></a>
+                </div>
             </div>
+
+            <ul class="linksf">
+                <li><a href="error.html">Persondata</a></li>
+                <li><a href="error.html">Cookies</a></li>
+                <li><a href="error.html">Vilkår</a></li>
+            </ul>
         </div>
 
-        <ul class="linksf">
-            <li><a href="error.html">Persondata</a></li>
-            <li><a href="error.html">Cookies</a></li>
-            <li><a href="error.html">Vilkår</a></li>
+        <ul class="bundf">
+            <li>+45 86 19 81 22</li>
+            <li id="bundfli2">Paradisgade 9c, <br class="brf2"> 8000 Aarhus C</li>
+            <li id="bundfli3">kontor@paradisbio.dk</li>
         </ul>
-    </div>
-
-    <ul class="bundf">
-        <li>+45 86 19 81 22</li>
-        <li id="bundfli2">Paradisgade 9c, <br class="brf2"> 8000 Aarhus C</li>
-        <li id="bundfli3">kontor@paradisbio.dk</li>
-    </ul>
-</footer>
-<!-- footer slut -->
+    </footer>
+    <!-- FOOTER SLUT -->
 </body>
 </html>
