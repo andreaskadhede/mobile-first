@@ -531,14 +531,14 @@ nav {
 /*************************************************************************************************************************************/
 
 .hov {
-    margin: 6rem 5% 1rem;
+    margin: 10rem 10% 10rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: #6a7986;
-    width: 90%;
-    height: 66vh;
+    width: 80%;
+    height: 60vh;
 }
 
 /* Error text */
@@ -1209,7 +1209,7 @@ nav {
     .hov {
         margin: 10rem 15% 4rem;
         width: 70%;
-        height: 44vh;
+        height: 64vh;
     }
 
     #errorbr {
@@ -1220,9 +1220,9 @@ nav {
 /* Breakpoint til laptop */
 @media (min-width: 1024px) {
     .hov {
-        margin: 11rem 5% 3rem;
+        margin: 14rem 5% 6rem;
         width: 90%;
-        height: 50vh;
+        height: 46vh;
     }
 
     #errorbr {
